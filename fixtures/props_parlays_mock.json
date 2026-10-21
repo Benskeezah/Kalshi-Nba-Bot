@@ -1,0 +1,87 @@
+{
+ "fetched_at": "2026-10-21T22:15:00Z",
+ "_source": "MOCK parlays (invented prices) over the REAL prop markets above.",
+ "markets": [
+  {
+   "ticker": "KXMVEMOCK-PROPS-1",
+   "event_ticker": "KXMVEMOCK-PROPS",
+   "title": "MOCK parlay: VanVleet 4+ ast, VanVleet 6+ ast",
+   "yes_sub_title": "",
+   "strike_type": "structured",
+   "yes_bid_dollars": "0.4800",
+   "yes_ask_dollars": "0.5200",
+   "no_bid_dollars": "0.4800",
+   "no_ask_dollars": "0.5200",
+   "yes_ask_size_fp": "50.00",
+   "no_ask_size_fp": "50.00",
+   "volume_fp": "0",
+   "open_interest_fp": "0",
+   "close_time": "2026-10-24T00:30:00Z",
+   "status": "active",
+   "mve_selected_legs": [
+    {
+     "market_ticker": "KXNBAAST-26OCT21DALHOU-HOUFVANVLEET5-4",
+     "side": "yes"
+    },
+    {
+     "market_ticker": "KXNBAAST-26OCT21DALHOU-HOUFVANVLEET5-6",
+     "side": "yes"
+    }
+   ]
+  },
+  {
+   "ticker": "KXMVEMOCK-PROPS-2",
+   "event_ticker": "KXMVEMOCK-PROPS",
+   "title": "MOCK parlay: VanVleet 6+ ast, Houston wins",
+   "yes_sub_title": "",
+   "strike_type": "structured",
+   "yes_bid_dollars": "0.4200",
+   "yes_ask_dollars": "0.4600",
+   "no_bid_dollars": "0.5400",
+   "no_ask_dollars": "0.5800",
+   "yes_ask_size_fp": "50.00",
+   "no_ask_size_fp": "50.00",
+   "volume_fp": "0",
+   "open_interest_fp": "0",
+   "close_time": "2026-10-24T00:30:00Z",
+   "status": "active",
+   "mve_selected_legs": [
+    {
+     "market_ticker": "KXNBAAST-26OCT21DALHOU-HOUFVANVLEET5-6",
+     "side": "yes"
+    },
+    {
+     "market_ticker": "KXNBAGAME-26OCT21DALHOU-HOU",
+     "side": "yes"
+    }
+   ]
+  },
+  {
+   "ticker": "KXMVEMOCK-PROPS-3",
+   "event_ticker": "KXMVEMOCK-PROPS",
+   "title": "MOCK parlay: VanVleet 6+ ast, Durant 25+ pts",
+   "yes_sub_title": "",
+   "strike_type": "structured",
+   "yes_bid_dollars": "0.2000",
+   "yes_ask_dollars": "0.2400",
+   "no_bid_dollars": "0.7600",
+   "no_ask_dollars": "0.8000",
+   "yes_ask_size_fp": "50.00",
+   "no_ask_size_fp": "50.00",
+   "volume_fp": "0",
+   "open_interest_fp": "0",
+   "close_time": "2026-10-24T00:30:00Z",
+   "status": "active",
+   "mve_selected_legs": [
+    {
+     "market_ticker": "KXNBAAST-26OCT21DALHOU-HOUFVANVLEET5-6",
+     "side": "yes"
+    },
+    {
+     "market_ticker": "KXNBAPTS-26OCT21DALHOU-HOUKDURANT7-25",
+     "side": "yes"
+    }
+   ]
+  }
+ ]
+}

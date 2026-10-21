@@ -1,0 +1,3 @@
+# No runtime dependencies (standard library only).
+# For tests:
+pytest>=7

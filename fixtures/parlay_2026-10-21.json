@@ -1,0 +1,21 @@
+{
+ "fetched_at": "2026-10-21T20:25:00Z",
+ "_source": "Real parlay market from GET /markets, captured 2026-10-21 (no resting orders).",
+ "markets": [
+  {
+   "ticker": "KXMVECROSSCATEGORY0-S2026KMI53R6KHGTH3YLL-JVATTRFEL",
+   "event_ticker": "KXMVECROSSCATEGORY0-S2026KMI53R6KHGTH3YLL",
+   "title": "yes Pittsburgh,yes New England,yes Washington",
+   "yes_sub_title": "",
+   "yes_bid_dollars": "0.0000",
+   "yes_ask_dollars": "0.0000",
+   "no_bid_dollars": "1.0000",
+   "no_ask_dollars": "1.0000",
+   "volume_fp": "0.00",
+   "open_interest_fp": "0.00",
+   "close_time": "2026-11-04T01:20:00Z",
+   "status": "active",
+   "rules_primary": ""
+  }
+ ]
+}

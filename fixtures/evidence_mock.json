@@ -1,0 +1,30 @@
+{
+ "_mock": true,
+ "MOCK-RAINOUT-26OCT25": {
+  "base_rate": {
+   "successes": 9,
+   "trials": 40,
+   "source": "MOCK historical postponement count",
+   "as_of": "2026-10-01"
+  },
+  "estimates": [
+   {
+    "p": 0.45,
+    "source": "MOCK forecaster rain-chance mapping",
+    "weight": 1,
+    "as_of": "2026-10-21T15:00:00Z"
+   }
+  ],
+  "adjustments": [
+   {
+    "log_odds": 0.3,
+    "reason": "MOCK: field has poor drainage",
+    "source": "MOCK groundskeeper note"
+   },
+   {
+    "log_odds": 0.5,
+    "reason": "unsourced hunch"
+   }
+  ]
+ }
+}

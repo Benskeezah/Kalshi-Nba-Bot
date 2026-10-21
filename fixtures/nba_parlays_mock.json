@@ -1,0 +1,91 @@
+{
+ "fetched_at": "2026-10-21T21:45:00Z",
+ "_source": "MOCK parlay markets (invented prices) whose legs are the REAL markets above. Built to test leg resolution.",
+ "markets": [
+  {
+   "ticker": "KXMVEMOCK-DEMO-1",
+   "event_ticker": "KXMVEMOCK-DEMO",
+   "title": "MOCK parlay: yes Boston, yes San Antonio",
+   "yes_sub_title": "",
+   "strike_type": "structured",
+   "yes_bid_dollars": "0.3300",
+   "yes_ask_dollars": "0.3600",
+   "no_bid_dollars": "0.6400",
+   "no_ask_dollars": "0.6700",
+   "volume_fp": "0.00",
+   "volume_24h_fp": "0.00",
+   "open_interest_fp": "0.00",
+   "close_time": "2026-10-26T01:30:00Z",
+   "status": "active",
+   "rules_primary": "",
+   "mve_selected_legs": [
+    {
+     "event_ticker": "KXNBAGAME-26OCT23NYKBOS",
+     "market_ticker": "KXNBAGAME-26OCT23NYKBOS-BOS",
+     "side": "yes"
+    },
+    {
+     "event_ticker": "KXNBAGAME-26OCT23HOUSAS",
+     "market_ticker": "KXNBAGAME-26OCT23HOUSAS-SAS",
+     "side": "yes"
+    }
+   ],
+   "yes_ask_size_fp": "50.00",
+   "no_ask_size_fp": "50.00"
+  },
+  {
+   "ticker": "KXMVEMOCK-DEMO-2",
+   "event_ticker": "KXMVEMOCK-DEMO",
+   "title": "MOCK parlay: yes San Antonio, San Antonio wins by over 7.5",
+   "yes_sub_title": "",
+   "strike_type": "structured",
+   "yes_bid_dollars": "0.4000",
+   "yes_ask_dollars": "0.4400",
+   "no_bid_dollars": "0.5600",
+   "no_ask_dollars": "0.6000",
+   "volume_fp": "0.00",
+   "volume_24h_fp": "0.00",
+   "open_interest_fp": "0.00",
+   "close_time": "2026-10-26T01:30:00Z",
+   "status": "active",
+   "rules_primary": "",
+   "mve_selected_legs": [
+    {
+     "market_ticker": "KXNBAGAME-26OCT23HOUSAS-SAS",
+     "side": "yes"
+    },
+    {
+     "market_ticker": "KXNBASPREAD-26OCT23HOUSAS-SAS8",
+     "side": "yes"
+    }
+   ]
+  },
+  {
+   "ticker": "KXMVEMOCK-DEMO-3",
+   "event_ticker": "KXMVEMOCK-DEMO",
+   "title": "MOCK parlay: player prop + winner",
+   "yes_sub_title": "",
+   "strike_type": "structured",
+   "yes_bid_dollars": "0.2000",
+   "yes_ask_dollars": "0.2400",
+   "no_bid_dollars": "0.7600",
+   "no_ask_dollars": "0.8000",
+   "volume_fp": "0.00",
+   "volume_24h_fp": "0.00",
+   "open_interest_fp": "0.00",
+   "close_time": "2026-10-26T01:30:00Z",
+   "status": "active",
+   "rules_primary": "",
+   "mve_selected_legs": [
+    {
+     "market_ticker": "KXNBAPTS-26OCT23HOUSAS-SASVWEMBANYAMA25-25",
+     "side": "yes"
+    },
+    {
+     "market_ticker": "KXNBAGAME-26OCT23HOUSAS-SAS",
+     "side": "yes"
+    }
+   ]
+  }
+ ]
+}

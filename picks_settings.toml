@@ -1,0 +1,38 @@
+# ---------------------------------------------------------------------------
+# What counts as a good prop. Edit a number, save, and the next daily run uses it.
+# On GitHub: open this file, tap the pencil icon, change the value, Commit changes.
+# Lines starting with # are notes and are ignored.
+# ---------------------------------------------------------------------------
+
+# A pick must have at least this chance of winning (0.70 = 70%).
+min_win_probability = 0.70
+
+# ...and its win chance must beat what it costs (price + fee) by at least this
+# many percentage points. Higher = fewer, safer-priced picks.
+min_margin_points = 2
+
+# Show picks the model is only LOW-confidence about (true / false).
+show_low_confidence = false
+
+# Which prop types to scan (true / false).
+include_points = true
+include_rebounds = true
+include_assists = true
+
+# How much sportsbook lines count vs. the stats model, from 0 to 1.
+# 0 = stats model only, 1 = sportsbook lines only, 0.5 = half and half.
+sportsbook_weight = 0.5
+
+# Games per run that get a sportsbook check (uses Odds API credits;
+# about 3 credits per game per run on the free plan's 500 a month).
+sportsbook_games_per_run = 2
+
+# --- Stats model adjustments ------------------------------------------------
+# Share of an opponent's defensive effect that is applied (0.5 = half).
+matchup_weight = 0.5
+
+# Boost for home players, and cut for away players, in percent.
+home_court_percent = 1.5
+
+# Minutes cut on the second night of a back-to-back, in percent.
+back_to_back_minutes_percent = 3

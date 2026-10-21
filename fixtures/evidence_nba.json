@@ -1,0 +1,40 @@
+{
+ "_mock": false,
+ "_note": "Real DraftKings closing-line fields from ESPN's scoreboard API, read 2026-10-21 ~21:40 UTC. One book only.",
+ "nba_lines": [
+  {
+   "home": "BOS",
+   "away": "NYK",
+   "tip": "2026-10-23T23:00:00Z",
+   "book": "DraftKings",
+   "source": "ESPN scoreboard",
+   "as_of": "2026-10-21T21:40:00Z",
+   "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261023",
+   "ml_home": -130,
+   "ml_away": 110,
+   "spread_home": -2.5,
+   "spread_home_odds": -110,
+   "spread_away_odds": -110,
+   "total": 223.5,
+   "over_odds": -110,
+   "under_odds": -110
+  },
+  {
+   "home": "SAS",
+   "away": "HOU",
+   "tip": "2026-10-24T01:30:00Z",
+   "book": "DraftKings",
+   "source": "ESPN scoreboard",
+   "as_of": "2026-10-21T21:40:00Z",
+   "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261023",
+   "ml_home": -218,
+   "ml_away": 180,
+   "spread_home": -7.5,
+   "spread_home_odds": -105,
+   "spread_away_odds": -115,
+   "total": 225.5,
+   "over_odds": -110,
+   "under_odds": -110
+  }
+ ]
+}

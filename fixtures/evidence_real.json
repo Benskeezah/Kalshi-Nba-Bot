@@ -1,0 +1,22 @@
+{
+ "_mock": false,
+ "_note": "Real forecasts read on 2026-10-21. NWS: forecast.weather.gov point forecast for Central Park, issued 2:19am EDT. yr.no (MET Norway) Central Park daily max 18\u00b0C = 64.4\u00b0F; yr rounds to whole \u00b0C, so this is only good to about \u00b10.9\u00b0F.",
+ "KXHIGHNY-26OCT22": {
+  "forecasts": [
+   {
+    "source": "NWS point forecast (forecast.weather.gov)",
+    "high_f": 65,
+    "issued_at": "2026-10-21T06:19:00Z",
+    "url": "https://forecast.weather.gov/MapClick.php?lat=40.7789&lon=-73.9692&FcstType=text",
+    "weight": 2
+   },
+   {
+    "source": "MET Norway / yr.no",
+    "high_f": 64.4,
+    "issued_at": "2026-10-21T09:17:00Z",
+    "url": "https://www.yr.no/en/forecast/daily-table/2-6301678/United%20States/New%20York/New%20York%20City,%20Central%20Park",
+    "weight": 1
+   }
+  ]
+ }
+}

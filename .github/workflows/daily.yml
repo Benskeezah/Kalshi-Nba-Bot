@@ -1,0 +1,77 @@
+# Runs the daily NBA props analysis on GitHub's servers, for free, twice a day.
+# It never places trades. Setup steps are in SETUP.md.
+name: Daily NBA props
+
+on:
+  schedule:
+    - cron: "0 17 * * *"    # 7:00 am Hawaii / 1 pm New York: early look
+    - cron: "30 21 * * *"   # 11:30 am Hawaii / 5:30 pm New York: before most tip-offs
+  workflow_dispatch: {}     # "Run workflow" button for a manual run
+
+permissions:
+  contents: write           # save the prediction log back to the repo
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily-props
+  cancel-in-progress: false
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      # The box-score database is rebuilt only once (~15 min), then cached.
+      - name: Restore stats database
+        uses: actions/cache/restore@v6
+        with:
+          path: nba_stats.sqlite
+          key: nba-stats-${{ github.run_id }}
+          restore-keys: nba-stats-
+
+      - name: Run today's analysis
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          KALSHI_EDGE_DB: data/predictions.sqlite
+          KALSHI_EDGE_STATS_DB: nba_stats.sqlite
+          REPORT_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+        run: |
+          mkdir -p data site
+          python -m kalshi_edge daily --out site
+
+      - name: Save stats database
+        if: always()
+        uses: actions/cache/save@v6
+        with:
+          path: nba_stats.sqlite
+          key: nba-stats-${{ github.run_id }}
+
+      - name: Save prediction log (track record)
+        run: |
+          git config user.name "kalshi-edge bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f data/predictions.sqlite
+          git diff --cached --quiet || git commit -m "Daily run $(date -u +%Y-%m-%d)"
+          git push
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: site
+
+  publish:
+    needs: analyze
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v5

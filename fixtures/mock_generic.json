@@ -1,0 +1,24 @@
+{
+ "fetched_at": "2026-10-21T20:25:00Z",
+ "_source": "MOCK market invented for testing the evidence estimator. Not a real Kalshi market.",
+ "markets": [
+  {
+   "ticker": "MOCK-RAINOUT-26OCT25",
+   "event_ticker": "MOCK-RAINOUT",
+   "title": "MOCK: Will the (fictional) Saturday league game be postponed?",
+   "yes_sub_title": "Postponed",
+   "yes_bid_dollars": "0.3000",
+   "yes_ask_dollars": "0.3200",
+   "no_bid_dollars": "0.6800",
+   "no_ask_dollars": "0.7000",
+   "yes_ask_size_fp": "400.00",
+   "no_ask_size_fp": "250.00",
+   "volume_fp": "5200.00",
+   "volume_24h_fp": "1800.00",
+   "open_interest_fp": "3100.00",
+   "close_time": "2026-10-25T23:00:00Z",
+   "status": "active",
+   "rules_primary": "MOCK rules."
+  }
+ ]
+}

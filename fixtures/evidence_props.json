@@ -1,0 +1,47 @@
+{
+ "_mock": false,
+ "_note": "Real prices read 2026-10-21 from betting articles. FanDuel VanVleet under 5.5 assists +118 (Dimers, updated 5:04pm ET). VanVleet 5+ assists -174, book not named (SI.com, 12:20 UTC). Game lines: DraftKings via SI.com, 12:20 UTC.",
+ "nba_props": [
+  {
+   "player": "Fred VanVleet",
+   "stat": "assists",
+   "line": 5.5,
+   "over": null,
+   "under": 118,
+   "book": "FanDuel",
+   "as_of": "2026-10-21T21:04:00Z",
+   "source": "Dimers article",
+   "url": "https://www.dimers.com/nba/news/nba-player-props-10-21-2026-ac"
+  },
+  {
+   "player": "Fred VanVleet",
+   "stat": "assists",
+   "line": 4.5,
+   "over": -174,
+   "under": null,
+   "book": "unnamed book (SI.com)",
+   "as_of": "2026-10-21T12:20:00Z",
+   "source": "SI.com article",
+   "url": "https://www.si.com/betting/mavericks-vs-rockets-prediction-odds-and-best-prop-bets-for-nba-season-opener-2026"
+  }
+ ],
+ "nba_lines": [
+  {
+   "home": "HOU",
+   "away": "DAL",
+   "tip": "2026-10-22T00:30:00Z",
+   "book": "DraftKings",
+   "source": "SI.com article",
+   "as_of": "2026-10-21T12:20:00Z",
+   "url": "https://www.si.com/betting/mavericks-vs-rockets-prediction-odds-and-best-prop-bets-for-nba-season-opener-2026",
+   "ml_home": -375,
+   "ml_away": 295,
+   "spread_home": -8.5,
+   "spread_home_odds": -115,
+   "spread_away_odds": -105,
+   "total": 230.5,
+   "over_odds": -102,
+   "under_odds": -118
+  }
+ ]
+}
