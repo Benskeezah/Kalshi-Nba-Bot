@@ -1,11 +1,11 @@
 {
  "date": "2026-10-22",
- "generated_at": "2026-10-22T17:29:05.371481+00:00",
+ "generated_at": "2026-10-22T21:55:05.643680+00:00",
  "mock": false,
  "log": [
-  "Stats: +11 games (latest 2026-10-22T02:30Z).",
-  "Settled 1449 earlier predictions.",
-  "280 open prop markets for 2026-10-22.",
+  "Stats: +0 games (latest 2026-10-22T02:30Z).",
+  "Settled 0 earlier predictions.",
+  "281 open prop markets for 2026-10-22.",
   "No sportsbook lines used (ODDS_API_KEY not set or no candidates)."
  ],
  "picks": []

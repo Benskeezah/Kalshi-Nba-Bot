@@ -1,7 +1,7 @@
   Season 2026: 0 new games to fetch
-  Season 2027: 11 new games to fetch
-Stats: +11 games (latest 2026-10-22T02:30Z).
-Settled 1449 earlier predictions.
-280 open prop markets for 2026-10-22.
+  Season 2027: 0 new games to fetch
+Stats: +0 games (latest 2026-10-22T02:30Z).
+Settled 0 earlier predictions.
+281 open prop markets for 2026-10-22.
 No sportsbook lines used (ODDS_API_KEY not set or no candidates).
 0 pick(s). Report: site/index.html
