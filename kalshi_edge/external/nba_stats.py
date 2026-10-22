@@ -178,7 +178,7 @@ class StatsDB:
                         if g["event_id"] not in known:
                             todo[g["event_id"]] = g
                 except Exception as e:
-                    log(f"  schedule {code} {season}: {e.__class__.__name__}")
+                    log(f"  schedule {code} {season}: {e.__class__.__name__}: {str(e)[:120]}")
                 time.sleep(sleep)
             log(f"Season {season}: {len(todo)} new games to fetch")
             for i, g in enumerate(todo.values(), 1):
@@ -187,7 +187,7 @@ class StatsDB:
                     known.add(g["event_id"])
                     added += 1
                 except Exception as e:
-                    log(f"  game {g['event_id']}: {e.__class__.__name__}")
+                    log(f"  game {g['event_id']}: {e.__class__.__name__}: {str(e)[:120]}")
                 if i % 100 == 0:
                     log(f"  {i}/{len(todo)}")
                 time.sleep(sleep)

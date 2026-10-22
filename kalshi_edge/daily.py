@@ -107,7 +107,7 @@ def run_daily(client, out_dir: str, *, day: Optional[date] = None, now: Optional
     # 1. stats
     if stats is not None and update_stats:
         cur = now.year + 1 if now.month >= 8 else now.year
-        added = stats.build([cur - 1, cur], log=lambda m: None)
+        added = stats.build([cur - 1, cur], log=lambda m: print("  " + m, flush=True))
         log.append(f"Stats: +{added} games (latest {stats.last_game_date()}).")
 
     # 2. settle yesterday
