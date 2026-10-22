@@ -117,3 +117,8 @@ def test_daily_run_offline(tmp_path):
     assert len(store.unresolved_tickers()) == 23
     assert out["picks"] == [] or out["picks"][0]["win_prob"] >= 0.7
     assert pick_lines([]) == []
+
+
+def test_team_change_is_flagged():
+    p = project(db(), "Kevin Durant", "points", "DAL", "HOU", True, TIP, None, {})
+    assert p.team_changed and any("new team" in w for w in p.warnings)

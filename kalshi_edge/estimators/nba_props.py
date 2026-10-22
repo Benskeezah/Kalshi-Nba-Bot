@@ -259,6 +259,9 @@ class NBAPropEstimator(Estimator):
         if abs(k - mu) > 2 * sd:
             conf = "LOW" if conf != "HIGH" else "MEDIUM"
             why.append(f"{k}+ is more than 2 SD from the expected {mu:.1f} (tail)")
+        if proj and proj.team_changed:
+            conf = "LOW"
+            why.append("player changed teams or role")
         if mock or any(e.is_mock for e in evs):
             conf = "LOW"
             why.append("MOCK data")

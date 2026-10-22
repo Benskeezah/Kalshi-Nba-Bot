@@ -44,6 +44,7 @@ class Projection:
     factors: list[str] = field(default_factory=list)
     warnings: list[str] = field(default_factory=list)
     opp_games_current: int = 0
+    team_changed: bool = False
 
 
 def season_of(d: datetime) -> int:
@@ -120,6 +121,11 @@ def project(db: StatsDB, player: str, stat: str, team: str, opp: str, home: bool
     minutes = mins * m_adj
     factors.append(f"Minutes: {minutes:.1f} projected (recent weighted {mins:.1f}, last-10 avg {last10:.1f}"
                    + (f"; {', '.join(notes)}" if notes else "") + ").")
+    moved = rows[0]["team"] != team
+    recent_other = sum(1 for r in rows[:20] if r["team"] != team)
+    if moved or recent_other >= 10:
+        warns.append(f"{player}'s logged games are mostly for {rows[0]['team']}, not {team}: new team or "
+                     "role, so his old minutes and usage may not carry over.")
     if (tip - last_date).days > 60:
         warns.append(f"Last logged game was {(tip - last_date).days} days ago; minutes and role may have changed.")
 
@@ -172,5 +178,9 @@ def project(db: StatsDB, player: str, stat: str, team: str, opp: str, home: bool
     mu = minutes * rate * f_opp * f_pace * f_home
     lo = mu * (1 - rate_se) * 0.92 / max(f_opp, 1.0)
     hi = mu * (1 + rate_se) * 1.08 / min(f_opp, 1.0)
-    return Projection(mu, lo, hi, [r[col] for r in rows], len(rows), cur_n, minutes, rate,
-                      factors, warns, opp_cur.games if opp_cur else 0)
+    if moved or recent_other >= 10:            # much less certain about the role
+        lo, hi = lo * 0.75, hi * 1.25
+    p = Projection(mu, lo, hi, [r[col] for r in rows], len(rows), cur_n, minutes, rate,
+                   factors, warns, opp_cur.games if opp_cur else 0)
+    p.team_changed = moved or recent_other >= 10
+    return p
