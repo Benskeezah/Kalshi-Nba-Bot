@@ -38,6 +38,7 @@ from .report import html_report
 from .store import PredictionStore
 from .user_settings import load as load_settings
 from .value import value_html, value_picks
+from .credits import DEFAULT_PER_GAME, credits_remaining, games_allowed, load_usage, record_cost
 
 ET = ZoneInfo("America/New_York")
 
@@ -133,6 +134,13 @@ def run_daily(client, out_dir: str, *, day: Optional[date] = None, now: Optional
 
     # 5. budgeted sportsbook lookups for the most promising games
     budget = int(os.environ.get("ODDS_API_GAMES_PER_RUN") or cfg["sportsbook_games_per_run"])
+    has_key = bool(os.environ.get("ODDS_API_KEY", "").strip())
+    credits_before, budget_note = None, ""
+    if has_key and use_live and budget > 0:
+        credits_before = credits_remaining(os.environ["ODDS_API_KEY"].strip())
+        per_game = load_usage().get("per_game", DEFAULT_PER_GAME)
+        budget, budget_note = games_allowed(credits_before, budget, now, reserve=cfg["sportsbook_credit_reserve"],
+                                            runs_per_day=cfg["runs_per_day"], per_game=per_game)
     # Games holding the best high-probability candidates first, then the value watchlist's.
     cands = [p.analysis for p in high_prob_picks(first, max(0.5, min_prob - 0.08), min_margin=-0.05,
                                                  allow_low=True)]
@@ -144,7 +152,6 @@ def run_daily(client, out_dir: str, *, day: Optional[date] = None, now: Optional
         if g and g not in games:
             games.append(g)
     games = games[:budget]
-    has_key = bool(os.environ.get("ODDS_API_KEY", "").strip())
     reg2 = EstimatorRegistry(use_live, evidence, stats, stats_mock)
     reg2.props.odds_games = set(games)
     if games and has_key:
@@ -153,15 +160,19 @@ def run_daily(client, out_dir: str, *, day: Optional[date] = None, now: Optional
         results = [rescored.get(a.market.ticker, a) for a in first]
         n_lines = len(reg2.props._c.lines)
         names = ", ".join("/".join(sorted(g)) for g in games)
+        cost = record_cost(credits_before, reg2.props.quota_remaining, len(games))
         log.append(f"Sportsbook check for {len(games)} game(s) ({names}): {n_lines} prop lines found; "
-                   f"Odds API credits left: {reg2.props.quota_remaining or 'unknown'}.")
+                   f"Odds API credits left: {reg2.props.quota_remaining or 'unknown'}"
+                   + (f" ({cost:.0f} per game this run)." if cost is not None else ".")
+                   + (f" Limited: {budget_note}." if budget_note else ""))
         for note in dict.fromkeys(reg2.props.notes):
             log.append(f"  Odds API note: {note}")
     else:
         results = first
         log.append("Sportsbook check skipped: " + ("ODDS_API_KEY secret not found." if not has_key else
-                                                   "no games today." if not games else
-                                                   "sportsbook budget is 0 in picks_settings.toml."))
+                                                   f"saving credits ({budget_note})." if budget_note and budget == 0
+                                                   else "sportsbook budget is 0 in picks_settings.toml."
+                                                   if budget == 0 else "no games today."))
 
     # 6. picks, then confirm executable depth for them
     picks = high_prob_picks(results, min_prob, min_margin, allow_low=allow_low)

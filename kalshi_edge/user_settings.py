@@ -18,6 +18,8 @@ DEFAULTS = {
     "include_assists": True,
     "sportsbook_weight": 0.5,
     "sportsbook_games_per_run": 2,
+    "sportsbook_credit_reserve": 20,
+    "runs_per_day": 2,
     "matchup_weight": 0.5,
     "home_court_percent": 1.5,
     "back_to_back_minutes_percent": 3.0,
@@ -61,6 +63,8 @@ def parse(text: str) -> dict:
     out["sportsbook_weight"] = min(1.0, max(0.0, float(out["sportsbook_weight"])))
     out["matchup_weight"] = min(1.0, max(0.0, float(out["matchup_weight"])))
     out["sportsbook_games_per_run"] = max(0, int(out["sportsbook_games_per_run"]))
+    out["sportsbook_credit_reserve"] = max(0, int(out["sportsbook_credit_reserve"]))
+    out["runs_per_day"] = max(1, int(out["runs_per_day"]))
     return out
 
 

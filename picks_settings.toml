@@ -27,6 +27,13 @@ sportsbook_weight = 0.5
 # about 3 credits per game per run on the free plan's 500 a month).
 sportsbook_games_per_run = 2
 
+# The job spreads your remaining Odds API credits over the rest of the month and
+# checks fewer games (or none) when they run low, so it never runs out mid-month.
+# Credits held back as a safety margin:
+sportsbook_credit_reserve = 20
+# Scheduled runs per day (match the cron lines in .github/workflows/daily.yml):
+runs_per_day = 2
+
 # --- Stats model adjustments ------------------------------------------------
 # Share of an opponent's defensive effect that is applied (0.5 = half).
 matchup_weight = 0.5
