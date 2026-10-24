@@ -36,3 +36,8 @@ home_court_percent = 1.5
 
 # Minutes cut on the second night of a back-to-back, in percent.
 back_to_back_minutes_percent = 3
+
+# Chance any player has a short night (gets hurt early, foul trouble, benched in a
+# blowout). Stops "2+ assists" style props looking like sure things. Raised
+# automatically for big spreads and back-to-backs.
+short_night_chance_percent = 7

@@ -141,3 +141,93 @@ def format_report(rows: list[dict]) -> str:
             for k, v in g.items():
                 L.append(f"    {k:<20} n={v['n']:<4} Brier {v['brier_model']:.4f}  {v['yes_bias_label']}")
     return "\n".join(L)
+
+
+# ---------------------------------------------------------------------------
+# Patterns in high-probability calls (props)
+# ---------------------------------------------------------------------------
+import re as _re
+
+_PROP = _re.compile(r"^KXNBA(PTS|REB|AST)-\d{2}[A-Z]{3}\d{2}([A-Z]{3})([A-Z]{3})-[A-Z]{3}\D+\d+-(\d+)$")
+_STAT = {"PTS": "Points", "REB": "Rebounds", "AST": "Assists"}
+
+
+def _sides(rows: list[dict], min_p: float):
+    """Each settled prop contributes the side the model rated >= min_p, if any."""
+    out = []
+    for r in rows:
+        m = _PROP.match(r.get("ticker") or "")
+        if not m or r.get("model_prob") is None or r.get("outcome") is None:
+            continue
+        for side, p in (("YES", r["model_prob"]), ("NO", 1 - r["model_prob"])):
+            if p < min_p:
+                continue
+            ask = r.get("yes_ask") if side == "YES" else (1 - r["yes_bid"] if r.get("yes_bid") is not None else None)
+            if ask is not None and not 0 < ask < 1:
+                ask = None
+            mkt = r.get("market_prob")
+            if mkt is not None and side == "NO":
+                mkt = 1 - mkt
+            out.append({"stat": _STAT[m.group(1)], "side": side, "p": p, "k": int(m.group(4)),
+                        "won": r["outcome"] == (1 if side == "YES" else 0), "ask": ask, "mkt": mkt,
+                        "game": r.get("event_ticker", "").split("-")[-1]})
+    return out
+
+
+def _group(sides, key):
+    g: dict = {}
+    for s in sides:
+        g.setdefault(key(s), []).append(s)
+    rows = []
+    for k, v in g.items():
+        priced = [x for x in v if x["ask"] is not None]
+        pnl = (sum((1.0 if x["won"] else 0.0) - x["ask"] - 0.07 * x["ask"] * (1 - x["ask"]) for x in priced)
+               / len(priced)) if priced else None
+        mk = [x["mkt"] for x in v if x["mkt"] is not None]
+        rows.append({"group": k, "n": len(v), "games": len({x["game"] for x in v}),
+                     "hit": sum(x["won"] for x in v) / len(v), "model": sum(x["p"] for x in v) / len(v),
+                     "kalshi": sum(mk) / len(mk) if mk else None, "pnl": pnl})
+    return sorted(rows, key=lambda r: -r["n"])
+
+
+def pattern_tables(rows: list[dict], min_p: float = 0.82) -> list[tuple[str, list[dict]]]:
+    sides = _sides(rows, min_p)
+    if not sides:
+        return []
+    price = lambda s: "n/a" if s["ask"] is None else "under 80¢" if s["ask"] < 0.8 else \
+        "80–90¢" if s["ask"] < 0.9 else "90¢+"
+    rung = lambda s: "Low rung (2+, 4+)" if s["k"] <= 4 else "Higher rung (5+)"
+    return [("Stat and side", _group(sides, lambda s: f"{s['stat']} {s['side']}")),
+            ("Low vs higher rungs", _group(sides, lambda s: f"{rung(s)} {s['side']}")),
+            ("Price paid", _group(sides, price))]
+
+
+def _cents(x) -> str:
+    return "n/a" if x is None else f"{x * 100:+.1f}¢"
+
+
+def pattern_html(rows: list[dict], min_p: float = 0.82) -> str:
+    tables = pattern_tables(rows, min_p)
+    if not tables:
+        return ""
+    n_games = len({s["game"] for s in _sides(rows, min_p)})
+
+    def pct(x):
+        return "n/a" if x is None else f"{x:.0%}"
+
+    parts = [f"<h2>What's hitting</h2><p class='note'>Every settled prop the model rated {min_p:.0%}+ on either "
+             f"side, across {n_games} games. <b>Hit</b> is how often it won; <b>Kalshi</b> is the price-implied "
+             "chance when the model ran; <b>Result</b> is profit per contract if you had bought all of them at "
+             "Kalshi's ask, after fees. Props in one game win or lose together, so small groups and few games "
+             "are mostly noise.</p>"]
+    for title, grp in tables:
+        body = "".join(
+            f"<tr><td>{g['group']}</td><td class='num'>{g['n']}</td><td class='num'>{g['games']}</td>"
+            f"<td class='num'>{pct(g['hit'])}</td><td class='num'>{pct(g['model'])}</td>"
+            f"<td class='num'>{pct(g['kalshi'])}</td>"
+            f"<td class='num'>{_cents(g['pnl'])}</td></tr>"
+            for g in grp)
+        parts.append(f"<h3>{title}</h3><div class='tbl'><table><thead><tr><th>Group</th><th>Props</th>"
+                     "<th>Games</th><th>Hit</th><th>Model said</th><th>Kalshi</th><th>Result</th></tr></thead>"
+                     f"<tbody>{body}</tbody></table></div>")
+    return "<section class='sheet'>" + "".join(parts) + "</section>"

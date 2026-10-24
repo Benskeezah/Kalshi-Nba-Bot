@@ -21,6 +21,7 @@ DEFAULTS = {
     "matchup_weight": 0.5,
     "home_court_percent": 1.5,
     "back_to_back_minutes_percent": 3.0,
+    "short_night_chance_percent": 7.0,
 }
 
 

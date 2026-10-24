@@ -53,20 +53,40 @@ def nb_sf(k: int, mu: float, r: float) -> float:
     return max(0.0, min(1.0, 1 - cdf))
 
 
-def p_over_line(line: float, mu: float, r: float) -> float:
+SHORT_NIGHT_SHARE = 0.35   # a short night (injury exit, foul trouble, benched) ~ 35% of normal output
+
+
+def short_night_chance(spread_abs: Optional[float], b2b: bool = False) -> float:
+    """Chance this player has a short-minutes night. Set in picks_settings.toml;
+    higher for likely blowouts (starters sit) and back-to-backs."""
+    q = load_settings()["short_night_chance_percent"] / 100
+    if spread_abs is not None and spread_abs >= 10:
+        q += 0.02
+    if b2b:
+        q += 0.01
+    return min(q, 0.3)
+
+
+def p_at_least(k: int, mu: float, r: float, q: float) -> float:
+    """P(X >= k) allowing a q chance of a short night. This mainly lowers
+    near-certain low rungs ("2+ assists"), which a plain count model makes too sure."""
+    return (1 - q) * nb_sf(k, mu, r) + q * nb_sf(k, mu * SHORT_NIGHT_SHARE, r)
+
+
+def p_over_line(line: float, mu: float, r: float, q: float = 0.0) -> float:
     """Fair P(over) for a sportsbook line. Integer lines push on equality."""
     if line != int(line):
-        return nb_sf(int(math.floor(line)) + 1, mu, r)
-    above, at_or_above = nb_sf(int(line) + 1, mu, r), nb_sf(int(line), mu, r)
+        return p_at_least(int(math.floor(line)) + 1, mu, r, q)
+    above, at_or_above = p_at_least(int(line) + 1, mu, r, q), p_at_least(int(line), mu, r, q)
     push = at_or_above - above
     return above / (1 - push) if push < 1 else 0.5
 
 
-def solve_mu(line: float, q_over: float, r: float) -> float:
+def solve_mu(line: float, q_over: float, r: float, q: float = 0.0) -> float:
     lo, hi = 0.01, 120.0
     for _ in range(70):
         mid = (lo + hi) / 2
-        if p_over_line(line, mid, r) < q_over:
+        if p_over_line(line, mid, r, q) < q_over:
             lo = mid
         else:
             hi = mid
@@ -180,6 +200,9 @@ class NBAPropEstimator(Estimator):
         r = r_from_log(values, DEFAULT_R[stat])
         r_src = f"his game log ({len(values)} games)" if len(values) >= 15 else "default"
 
+        b2b = bool(proj and any("back-to-back" in f for f in proj.factors))
+        q = short_night_chance(spread_abs, b2b)
+
         # ---- 2. sportsbook lines (cross-check / blend)
         mu_points, line_cands = [], []
         newest = max((l.updated_at for l in lines if l.updated_at), default=None)
@@ -191,8 +214,8 @@ class NBAPropEstimator(Estimator):
             w = (3.0 if l.book.lower() in SHARP_BOOKS else 1.0) * (2.0 if two else 1.0)
             if newest and l.updated_at:      # older quotes count less (half-life 4 hours)
                 w *= 0.5 ** ((newest - l.updated_at).total_seconds() / 3600 / 4)
-            mu_points.append((solve_mu(l.line, statistics.fmean(qs), r), w))
-            line_cands += [solve_mu(l.line, q, rr) for q in qs for rr in (r, r * 0.6, r * 1.6)]
+            mu_points.append((solve_mu(l.line, statistics.fmean(qs), r, q), w))
+            line_cands += [solve_mu(l.line, qo, rr, q) for qo in qs for rr in (r, r * 0.6, r * 1.6)]
             price = (f"over {l.over:+.0f} / under {l.under:+.0f}" if two else
                      f"over {l.over:+.0f} only" if l.over is not None else f"under {l.under:+.0f} only")
             evs.append(Evidence(f"{l.source} — {l.book}", f"{player} {stat} {l.line:g}: {price}",
@@ -228,8 +251,9 @@ class NBAPropEstimator(Estimator):
         elif mu_stats is not None:
             mu_cands += [mu_stats * 0.85, mu_stats * 1.15]
 
-        p = nb_sf(k, mu, r)
-        grid = [nb_sf(k, m, rr) for m in mu_cands for rr in (r, r * 0.6, r * 1.6)] + [p]
+        p = p_at_least(k, mu, r, q)
+        grid = [p_at_least(k, m, rr, qq) for m in mu_cands for rr in (r, r * 0.6, r * 1.6)
+                for qq in (q * 0.5, q, q * 1.6)] + [p]
         line_age = [(now - l.updated_at).total_seconds() / 3600 for l in lines if l.updated_at]
         age_h = min(line_age) if line_age else None
         pad = 0.015 + (min(0.05, 0.01 * age_h / 3) if age_h is not None else 0.02)
@@ -267,7 +291,8 @@ class NBAPropEstimator(Estimator):
             why.append("MOCK data")
 
         # ---- 5. explanation
-        supporting = [f"Expected {stat}: {mu:.1f} ({basis}). P({k}+) = {p:.0%}; spread of outcomes from {r_src}."]
+        supporting = [f"Expected {stat}: {mu:.1f} ({basis}). P({k}+) = {p:.0%}; spread of outcomes from {r_src}; "
+                      f"{q:.0%} chance of a short-minutes night allowed for."]
         if proj:
             supporting += proj.factors
         opposing = list(proj.warnings) if proj else []
@@ -298,6 +323,8 @@ class NBAPropEstimator(Estimator):
                 "Vig removed proportionally and by the power method; one-sided prices assume a "
                 f"{ONE_SIDED_OVERROUND[0]:.0%}-{ONE_SIDED_OVERROUND[1]:.0%} book margin.",
                 "Conditional on the player entering the game (Kalshi settles DNPs at a fair price).",
+                f"A {q:.0%} chance of a short night (early injury exit, foul trouble, benched in a blowout) "
+                "at about a third of normal output.",
             ] + ([f"Confidence lowered: {'; '.join(why)}."] if why else []),
             would_change=["Injury report / minutes restriction for this player or a teammate.",
                           "Starting lineup announcements (~30 min before tip).",

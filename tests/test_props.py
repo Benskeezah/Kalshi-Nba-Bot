@@ -112,3 +112,24 @@ def test_parsers():
                   {"eventId": "9", "stats": ["40", "1-1", "1", "1", "50"]}]}]}]}
     g = parse_espn_gamelog(gl, "Kevin Durant", "points")
     assert g.values == [31.0, 22.0]                       # newest first, playoffs excluded
+
+
+def test_short_night_lowers_sure_things_most():
+    from kalshi_edge.estimators.nba_props import p_at_least
+    low_plain, low_mix = nb_sf(2, 4.5, 30), p_at_least(2, 4.5, 30, 0.07)
+    high_plain, high_mix = nb_sf(8, 4.5, 30), p_at_least(8, 4.5, 30, 0.07)
+    assert low_mix < low_plain and low_plain - low_mix > high_plain - high_mix
+    assert p_at_least(2, 4.5, 30, 0.0) == pytest.approx(low_plain)
+
+
+def test_pattern_tables():
+    from kalshi_edge.calibration import pattern_html, pattern_tables
+    rows = [{"ticker": "KXNBAAST-26OCT21DALHOU-HOUFVANVLEET5-2", "event_ticker": "KXNBAAST-26OCT21DALHOU",
+             "model_prob": 0.95, "outcome": 0, "yes_ask": 0.9, "yes_bid": 0.88, "market_prob": 0.89},
+            {"ticker": "KXNBAPTS-26OCT21DALHOU-HOUKDURANT7-35", "event_ticker": "KXNBAPTS-26OCT21DALHOU",
+             "model_prob": 0.1, "outcome": 0, "yes_ask": None, "yes_bid": 0.08, "market_prob": 0.1}]
+    t = dict(pattern_tables(rows))
+    g = {r["group"]: r for r in t["Stat and side"]}
+    assert g["Assists YES"]["hit"] == 0 and g["Points NO"]["hit"] == 1
+    assert g["Assists YES"]["pnl"] == pytest.approx(-0.9 - 0.07 * 0.9 * 0.1)
+    assert "What's hitting" in pattern_html(rows)

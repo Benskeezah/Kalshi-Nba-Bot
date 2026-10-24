@@ -24,7 +24,7 @@ from datetime import date, datetime, timezone
 from typing import Optional
 from zoneinfo import ZoneInfo
 
-from .calibration import format_report, summarize
+from .calibration import format_report, pattern_html, summarize
 from .config import settings
 from .edge import analyze
 from .estimators.nba_props import PROP_SERIES, parse_prop_ticker
@@ -180,7 +180,8 @@ def run_daily(client, out_dir: str, *, day: Optional[date] = None, now: Optional
             + " ".join(log)
             + ("" if cal_n >= 50 else f" Only {cal_n} settled predictions so far, so the model's win "
                "probabilities are not yet verified. Treat picks as research, not certainties."))
-    footer = (f"<section class='sheet'><h2>Track record</h2><pre class='mono' "
+    patterns = pattern_html(store.resolved()) if store is not None else ""
+    footer = (f"{patterns}<section class='sheet'><h2>Track record</h2><pre class='mono' "
               f"style='white-space:pre-wrap'>{cal}</pre></section>")
     page = html_report(results, f"NBA Props {day.strftime('%b %d')}", note=note, picks=picks,
                        min_prob=min_prob, detail_tickers=detail, footer=footer)
