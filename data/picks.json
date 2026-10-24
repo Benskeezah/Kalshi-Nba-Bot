@@ -1,12 +1,42 @@
 {
- "date": "2026-10-23",
- "generated_at": "2026-10-23T21:54:45.560268+00:00",
+ "date": "2026-10-24",
+ "generated_at": "2026-10-24T08:26:32.015147+00:00",
  "mock": false,
  "log": [
-  "Stats: +0 games (latest 2026-10-23T01:30Z).",
-  "Settled 14 earlier predictions.",
-  "1594 open prop markets for 2026-10-23.",
-  "No sportsbook lines used (ODDS_API_KEY not set or no candidates)."
+  "Stats: +12 games (latest 2026-10-24T02:00Z).",
+  "Settled 1594 earlier predictions.",
+  "625 open prop markets for 2026-10-24.",
+  "No sportsbook lines used (ODDS_API_KEY not set or no candidates).",
+  "Value watchlist: 3 practice pick(s)."
  ],
- "picks": []
+ "picks": [],
+ "value_watchlist": [
+  {
+   "label": "NO: Trae Young: 12+ (finishes with 11 or fewer)",
+   "ticker": "KXNBAAST-26OCT24WASCHI-WASTYOUNG3-12",
+   "side": "NO",
+   "price": 0.59,
+   "win_prob": 0.795,
+   "edge": 0.1881,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Tari Eason: 10+ (finishes with 9 or fewer)",
+   "ticker": "KXNBAPTS-26OCT24HOUATL-HOUTEASON17-10",
+   "side": "NO",
+   "price": 0.5,
+   "win_prob": 0.6765,
+   "edge": 0.159,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Giannis Antetokounmpo: 6+ (finishes with 5 or fewer)",
+   "ticker": "KXNBAAST-26OCT24MIACHA-MIAGANTETOKOUNMPO7-6",
+   "side": "NO",
+   "price": 0.51,
+   "win_prob": 0.677,
+   "edge": 0.1495,
+   "sportsbooks": "no line"
+  }
+ ]
 }
