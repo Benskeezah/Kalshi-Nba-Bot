@@ -34,6 +34,14 @@ TEAMS: dict[str, tuple[str, str]] = {
     "TOR": ("TOR", "Toronto Raptors"), "UTA": ("UTAH", "Utah Jazz"), "WAS": ("WSH", "Washington Wizards"),
 }
 ESPN_TO_KALSHI = {v[0]: k for k, v in TEAMS.items()}
+NICK_TO_KALSHI = {v[1].lower().split()[-1]: k for k, v in TEAMS.items()}   # "celtics" -> BOS
+
+
+def team_code(name: str):
+    """Kalshi code from any full team name ("LA Clippers", "Los Angeles Clippers", ...)."""
+    return NICK_TO_KALSHI.get((name or "").strip().lower().split()[-1]) if name else None
+
+
 NAME_TO_KALSHI = {v[1].lower(): k for k, v in TEAMS.items()}
 # Kalshi titles use city names ("Los Angeles L", "New York"); used to match parlay legs.
 CITY_TO_KALSHI = {
@@ -133,7 +141,7 @@ def _f(v) -> Optional[float]:
 def parse_odds_api(data: list) -> list[GameOdds]:
     out = []
     for ev in data:
-        home, away = NAME_TO_KALSHI.get(ev["home_team"].lower()), NAME_TO_KALSHI.get(ev["away_team"].lower())
+        home, away = team_code(ev["home_team"]), team_code(ev["away_team"])
         if not home or not away:
             continue
         g = GameOdds(home, away, _ts(ev.get("commence_time")))

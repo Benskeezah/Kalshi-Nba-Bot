@@ -133,24 +133,35 @@ def run_daily(client, out_dir: str, *, day: Optional[date] = None, now: Optional
 
     # 5. budgeted sportsbook lookups for the most promising games
     budget = int(os.environ.get("ODDS_API_GAMES_PER_RUN") or cfg["sportsbook_games_per_run"])
-    cands = high_prob_picks(first, max(0.5, min_prob - 0.08), min_margin=-0.05, allow_low=True)
+    # Games holding the best high-probability candidates first, then the value watchlist's.
+    cands = [p.analysis for p in high_prob_picks(first, max(0.5, min_prob - 0.08), min_margin=-0.05,
+                                                 allow_low=True)]
+    cands += [v.analysis for v in value_picks(first)]
+    cands += sorted(first, key=lambda a: -(a.market.volume_24h or 0))      # fallback: busiest markets
     games: list = []
-    for p in cands:
-        g = _game_key(p.analysis)
+    for a in cands:
+        g = _game_key(a)
         if g and g not in games:
             games.append(g)
     games = games[:budget]
+    has_key = bool(os.environ.get("ODDS_API_KEY", "").strip())
     reg2 = EstimatorRegistry(use_live, evidence, stats, stats_mock)
     reg2.props.odds_games = set(games)
-    if games and os.environ.get("ODDS_API_KEY"):
+    if games and has_key:
         in_games = [m for m in markets if _game_key_m(m) in games]
         rescored = {a.market.ticker: a for a in scan(in_games, reg2, evidence, None, size, now)}
         results = [rescored.get(a.market.ticker, a) for a in first]
-        log.append(f"Sportsbook lines checked for {len(games)} game(s); "
+        n_lines = len(reg2.props._c.lines)
+        names = ", ".join("/".join(sorted(g)) for g in games)
+        log.append(f"Sportsbook check for {len(games)} game(s) ({names}): {n_lines} prop lines found; "
                    f"Odds API credits left: {reg2.props.quota_remaining or 'unknown'}.")
+        for note in dict.fromkeys(reg2.props.notes):
+            log.append(f"  Odds API note: {note}")
     else:
         results = first
-        log.append("No sportsbook lines used (ODDS_API_KEY not set or no candidates).")
+        log.append("Sportsbook check skipped: " + ("ODDS_API_KEY secret not found." if not has_key else
+                                                   "no games today." if not games else
+                                                   "sportsbook budget is 0 in picks_settings.toml."))
 
     # 6. picks, then confirm executable depth for them
     picks = high_prob_picks(results, min_prob, min_margin, allow_low=allow_low)

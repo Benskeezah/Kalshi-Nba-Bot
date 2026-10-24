@@ -22,7 +22,7 @@ from datetime import datetime, timezone
 from typing import Optional
 
 from ..config import settings
-from .nba_odds import TEAMS
+from .nba_odds import TEAMS, team_code
 
 STATS = {"points": "PTS", "rebounds": "REB", "assists": "AST"}
 ODDS_API_MARKETS = {"points": "player_points", "rebounds": "player_rebounds", "assists": "player_assists"}
@@ -178,8 +178,8 @@ class PropProvider:
         try:
             base = "https://api.the-odds-api.com/v4/sports/basketball_nba"
             events = _get(f"{base}/events?" + urllib.parse.urlencode({"apiKey": key}))
-            names = {TEAMS[home][1].lower(), TEAMS[away][1].lower()}
-            ev = next((e for e in events if {e["home_team"].lower(), e["away_team"].lower()} == names), None)
+            ev = next((e for e in events if {team_code(e["home_team"]), team_code(e["away_team"])} == {home, away}),
+                      None)
             if not ev:
                 self.notes.append("The Odds API has no event for this game yet.")
                 return
