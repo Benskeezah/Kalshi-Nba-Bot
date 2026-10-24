@@ -1,8 +1,8 @@
   Season 2026: 0 new games to fetch
-  Season 2027: 12 new games to fetch
-Stats: +12 games (latest 2026-10-24T02:00Z).
-Settled 1594 earlier predictions.
+  Season 2027: 0 new games to fetch
+Stats: +0 games (latest 2026-10-24T02:00Z).
+Settled 0 earlier predictions.
 625 open prop markets for 2026-10-24.
-No sportsbook lines used (ODDS_API_KEY not set or no candidates).
-Value watchlist: 3 practice pick(s).
+Sportsbook check for 2 game(s) (CHI/WAS, ATL/HOU): 134 prop lines found; Odds API credits left: 476.
+Value watchlist: 0 practice pick(s).
 0 pick(s). Report: site/index.html
