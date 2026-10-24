@@ -22,6 +22,9 @@ DEFAULTS = {
     "home_court_percent": 1.5,
     "back_to_back_minutes_percent": 3.0,
     "short_night_chance_percent": 7.0,
+    "value_max_price_cents": 70,
+    "value_min_edge_points": 10,
+    "value_max_spread_cents": 4,
 }
 
 

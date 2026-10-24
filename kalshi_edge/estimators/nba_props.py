@@ -330,8 +330,9 @@ class NBAPropEstimator(Estimator):
                           "Starting lineup announcements (~30 min before tip).",
                           "Line moves on the prop at sharp books."],
             time_sensitive=True, created_at=now,
-            params={"kind": "prop", "player": player, "stat": stat, "k": k, "mu": mu, "r": r,
+            params={"kind": "prop", "player": player, "stat": stat, "k": k, "mu": mu, "r": r, "q": q,
                     "mu_stats": mu_stats, "mu_lines": mu_lines,
+                    "p_book": p_at_least(k, mu_lines, r, q) if mu_lines is not None else None,
                     "team": team, "game": f"{t['date']}:{t['away']}@{t['home']}"})
 
 

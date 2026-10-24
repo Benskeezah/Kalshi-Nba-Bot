@@ -37,6 +37,7 @@ from .pipeline import rank_score, scan
 from .report import html_report
 from .store import PredictionStore
 from .user_settings import load as load_settings
+from .value import value_html, value_picks
 
 ET = ZoneInfo("America/New_York")
 
@@ -172,7 +173,10 @@ def run_daily(client, out_dir: str, *, day: Optional[date] = None, now: Optional
     # 7. outputs
     cal = format_report(store.resolved()) if store is not None else "No prediction log."
     cal_n = summarize(store.resolved())["n"] if store is not None else 0
-    detail = {p.analysis.market.ticker for p in picks} | {a.market.ticker for a in results[:25]}
+    vpicks = value_picks(results)
+    log.append(f"Value watchlist: {len(vpicks)} practice pick(s).")
+    detail = ({p.analysis.market.ticker for p in picks} | {v.analysis.market.ticker for v in vpicks[:25]}
+              | {a.market.ticker for a in results[:25]})
     any_mock = stats_mock or any(x.is_mock for a in results for x in a.estimate.evidence)
     note = (f"Daily run for {day.strftime('%a %b %d, %Y')} · generated {now.strftime('%Y-%m-%d %H:%M UTC')}. "
             f"Settings: picks need {min_prob:.0%}+ to win and {min_margin * 100:g}+ points over break-even"
@@ -183,8 +187,9 @@ def run_daily(client, out_dir: str, *, day: Optional[date] = None, now: Optional
     patterns = pattern_html(store.resolved()) if store is not None else ""
     footer = (f"{patterns}<section class='sheet'><h2>Track record</h2><pre class='mono' "
               f"style='white-space:pre-wrap'>{cal}</pre></section>")
+    vsec = value_html(vpicks, store.resolved() if store is not None else [])
     page = html_report(results, f"NBA Props {day.strftime('%b %d')}", note=note, picks=picks,
-                       min_prob=min_prob, detail_tickers=detail, footer=footer)
+                       min_prob=min_prob, detail_tickers=detail, footer=footer, value_section=vsec)
     for name in ("index.html", f"{day.isoformat()}.html"):
         with open(os.path.join(out_dir, name), "w") as f:
             f.write(page)
@@ -192,7 +197,10 @@ def run_daily(client, out_dir: str, *, day: Optional[date] = None, now: Optional
                "picks": [{"label": p.label, "ticker": p.analysis.market.ticker, "side": p.side,
                           "win_prob": round(p.win_p, 4), "win_prob_low": round(p.win_low, 4),
                           "price": p.price, "breakeven": round(p.breakeven, 4),
-                          "confidence": p.analysis.estimate.confidence} for p in picks]}
+                          "confidence": p.analysis.estimate.confidence} for p in picks],
+               "value_watchlist": [{"label": v.label, "ticker": v.analysis.market.ticker, "side": v.side,
+                                    "price": v.price, "win_prob": round(v.win_p, 4), "edge": round(v.edge, 4),
+                                    "sportsbooks": v.book} for v in vpicks]}
     with open(os.path.join(out_dir, "picks.json"), "w") as f:
         json.dump(payload, f, indent=1)
 

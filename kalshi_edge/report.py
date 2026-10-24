@@ -272,7 +272,7 @@ def _picks_html(picks, min_prob) -> str:
 
 def html_report(results: list[Analysis], title: str = "Kalshi Edge Scan", note: str = "",
                 picks=None, min_prob: float = 0.70, detail_tickers: Optional[set] = None,
-                footer: str = "") -> str:
+                footer: str = "", value_section: str = "") -> str:
     any_mock = any(x.is_mock for a in results for x in a.estimate.evidence)
     rows = []
     for r, a in zip(ranking_rows(results), results):
@@ -304,6 +304,7 @@ def html_report(results: list[Analysis], title: str = "Kalshi Edge Scan", note: 
   <p class="note">Ranked by after-cost expected value at the pessimistic end of the model's range, discounted for
   confidence, liquidity and time to close, so the biggest raw edge is not automatically first. Tap a column to sort.</p>
   {_picks_html(picks, min_prob)}
+  {value_section}
   <h2>All markets</h2>
   <div class="tbl"><table><thead><tr>{head_html}</tr></thead>
   <tbody>{''.join(rows)}</tbody></table></div>

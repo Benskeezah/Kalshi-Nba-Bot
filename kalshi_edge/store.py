@@ -47,7 +47,9 @@ class PredictionStore:
              best.avg_fill if best else None, best.fee_per_contract if best else None,
              best.ev_net if best else None,
              json.dumps({"evidence": [x.to_dict() for x in e.evidence], "assumptions": e.assumptions,
-                         "insufficient_reason": e.insufficient_reason}),
+                         "insufficient_reason": e.insufficient_reason,
+                         "params": {k: v for k, v in (e.params or {}).items()
+                                    if isinstance(v, (int, float, str, bool)) or v is None}}),
              int(any(x.is_mock for x in e.evidence))))
         self.conn.commit()
         return cur.lastrowid

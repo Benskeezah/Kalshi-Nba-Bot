@@ -122,3 +122,19 @@ def test_daily_run_offline(tmp_path):
 def test_team_change_is_flagged():
     p = project(db(), "Kevin Durant", "points", "DAL", "HOU", True, TIP, None, {})
     assert p.team_changed and any("new team" in w for w in p.warnings)
+
+
+def test_value_watchlist_rules_and_scoring():
+    from kalshi_edge.value import value_picks, value_results
+    cheap = _analysis(0.80, 0.72, 0.86, 0.58, 0.60)         # model 80%, costs 60c, 2c spread -> qualifies
+    cheap.estimate.params = {"p_book": 0.70}
+    wide = _analysis(0.80, 0.72, 0.86, 0.50, 0.60)          # 10c spread -> skipped
+    pricey = _analysis(0.92, 0.88, 0.95, 0.83, 0.84)        # too expensive for the watchlist
+    vp = value_picks([cheap, wide, pricey])
+    assert [v.analysis for v in vp] == [cheap] and vp[0].side == "YES" and vp[0].book == "agrees"
+    rows = [{"ticker": "KXNBAPTS-26OCT21DALHOU-HOUKDURANT7-25", "event_ticker": "KXNBAPTS-26OCT21DALHOU",
+             "model_prob": 0.80, "outcome": 1, "yes_ask": 0.60, "yes_bid": 0.58, "spread": 0.02,
+             "evidence_json": '{"params": {"p_book": 0.55}}'}]
+    r = value_results(rows)
+    assert r["All watchlist picks"]["n"] == 1 and r["Sportsbook disagrees"]["hit"] == 1.0
+    assert r["All watchlist picks"]["result"] == pytest.approx(0.40 - 0.07 * 0.6 * 0.4)

@@ -41,3 +41,10 @@ back_to_back_minutes_percent = 3
 # blowout). Stops "2+ assists" style props looking like sure things. Raised
 # automatically for big spreads and back-to-backs.
 short_night_chance_percent = 7
+
+# --- Value watchlist (practice picks: tracked, never sent as alerts) -------------
+# Cheap contracts the model thinks are underpriced. Shown on the report and scored
+# in "Value watchlist results" so you can see if this strategy works before using it.
+value_max_price_cents = 70      # only contracts costing at most this
+value_min_edge_points = 10      # model's win chance must beat price + fee by this much
+value_max_spread_cents = 4      # skip markets whose bid-ask gap is wider than this
