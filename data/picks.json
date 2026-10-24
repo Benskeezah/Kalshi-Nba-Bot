@@ -1,24 +1,33 @@
 {
  "date": "2026-10-24",
- "generated_at": "2026-10-24T17:23:38.279794+00:00",
+ "generated_at": "2026-10-24T21:50:12.889255+00:00",
  "mock": false,
  "log": [
   "Stats: +0 games (latest 2026-10-24T02:00Z).",
   "Settled 0 earlier predictions.",
-  "831 open prop markets for 2026-10-24.",
-  "Sportsbook check for 2 game(s) (DAL/SAS, CHA/MIA): 391 prop lines found; Odds API credits left: 440 (6 per game this run).",
-  "Value watchlist: 21 practice pick(s)."
+  "913 open prop markets for 2026-10-24.",
+  "Sportsbook check for 2 game(s) (DAL/SAS, CHA/MIA): 546 prop lines found; Odds API credits left: 422 (6 per game this run).",
+  "Value watchlist: 26 practice pick(s)."
  ],
  "picks": [],
  "value_watchlist": [
   {
-   "label": "YES: Bam Adebayo: 25+",
-   "ticker": "KXNBAPTS-26OCT24MIACHA-MIABADEBAYO13-25",
-   "side": "YES",
-   "price": 0.13,
-   "win_prob": 0.2499,
-   "edge": 0.1119,
-   "sportsbooks": "agrees"
+   "label": "NO: Aaron Wiggins: 10+ (finishes with 9 or fewer)",
+   "ticker": "KXNBAPTS-26OCT24HOUATL-ATLAWIGGINS2-10",
+   "side": "NO",
+   "price": 0.45,
+   "win_prob": 0.689,
+   "edge": 0.2217,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Trae Young: 20+ (finishes with 19 or fewer)",
+   "ticker": "KXNBAPTS-26OCT24WASCHI-WASTYOUNG3-20",
+   "side": "NO",
+   "price": 0.41,
+   "win_prob": 0.6458,
+   "edge": 0.2189,
+   "sportsbooks": "no line"
   },
   {
    "label": "NO: Trae Young: 12+ (finishes with 11 or fewer)",
@@ -39,21 +48,12 @@
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Aaron Wiggins: 15+ (finishes with 14 or fewer)",
-   "ticker": "KXNBAPTS-26OCT24HOUATL-ATLAWIGGINS2-15",
-   "side": "NO",
-   "price": 0.68,
-   "win_prob": 0.8853,
-   "edge": 0.19,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Trae Young: 20+ (finishes with 19 or fewer)",
-   "ticker": "KXNBAPTS-26OCT24WASCHI-WASTYOUNG3-20",
-   "side": "NO",
-   "price": 0.44,
-   "win_prob": 0.6458,
-   "edge": 0.1886,
+   "label": "YES: Tre Jones: 10+",
+   "ticker": "KXNBAPTS-26OCT24WASCHI-CHITJONES30-10",
+   "side": "YES",
+   "price": 0.51,
+   "win_prob": 0.7122,
+   "edge": 0.1848,
    "sportsbooks": "no line"
   },
   {
@@ -69,9 +69,9 @@
    "label": "NO: Day'Ron Sharpe: 8+ (finishes with 7 or fewer)",
    "ticker": "KXNBAREB-26OCT24BKNCLE-BKNDSHARPE20-8",
    "side": "NO",
-   "price": 0.41,
+   "price": 0.4,
    "win_prob": 0.5864,
-   "edge": 0.1595,
+   "edge": 0.1696,
    "sportsbooks": "no line"
   },
   {
@@ -81,6 +81,51 @@
    "price": 0.55,
    "win_prob": 0.7207,
    "edge": 0.1533,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Anthony Davis: 25+ (finishes with 24 or fewer)",
+   "ticker": "KXNBAPTS-26OCT24WASCHI-WASADAVIS23-25",
+   "side": "NO",
+   "price": 0.56,
+   "win_prob": 0.7303,
+   "edge": 0.153,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "YES: Jeremiah Fears: 4+",
+   "ticker": "KXNBAAST-26OCT24NOPDEN-NOPJFEARS0-4",
+   "side": "YES",
+   "price": 0.29,
+   "win_prob": 0.4553,
+   "edge": 0.1509,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Kyle Kuzma: 4+ (finishes with 3 or fewer)",
+   "ticker": "KXNBAREB-26OCT24MILPHI-MILKKUZMA18-4",
+   "side": "NO",
+   "price": 0.34,
+   "win_prob": 0.5009,
+   "edge": 0.1452,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "YES: Sam Merrill: 10+",
+   "ticker": "KXNBAPTS-26OCT24BKNCLE-CLESMERRILL5-10",
+   "side": "YES",
+   "price": 0.4,
+   "win_prob": 0.5615,
+   "edge": 0.1447,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Trae Young: 25+ (finishes with 24 or fewer)",
+   "ticker": "KXNBAPTS-26OCT24WASCHI-WASTYOUNG3-25",
+   "side": "NO",
+   "price": 0.67,
+   "win_prob": 0.8274,
+   "edge": 0.1419,
    "sportsbooks": "no line"
   },
   {
@@ -102,11 +147,20 @@
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Kyle Kuzma: 4+ (finishes with 3 or fewer)",
-   "ticker": "KXNBAREB-26OCT24MILPHI-MILKKUZMA18-4",
+   "label": "YES: Jeremiah Fears: 2+",
+   "ticker": "KXNBAAST-26OCT24NOPDEN-NOPJFEARS0-2",
+   "side": "YES",
+   "price": 0.67,
+   "win_prob": 0.8226,
+   "edge": 0.1371,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Egor D\u00ebmin: 10+ (finishes with 9 or fewer)",
+   "ticker": "KXNBAPTS-26OCT24BKNCLE-BKNEDEMIN8-10",
    "side": "NO",
-   "price": 0.35,
-   "win_prob": 0.5009,
+   "price": 0.43,
+   "win_prob": 0.582,
    "edge": 0.1349,
    "sportsbooks": "no line"
   },
@@ -120,84 +174,75 @@
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Julius Randle: 8+ (finishes with 7 or fewer)",
-   "ticker": "KXNBAREB-26OCT24BKNCLE-BKNJRANDLE30-8",
-   "side": "NO",
-   "price": 0.59,
-   "win_prob": 0.7348,
-   "edge": 0.1278,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Anthony Davis: 25+ (finishes with 24 or fewer)",
-   "ticker": "KXNBAPTS-26OCT24WASCHI-WASADAVIS23-25",
-   "side": "NO",
-   "price": 0.59,
-   "win_prob": 0.7303,
-   "edge": 0.1234,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Trae Young: 25+ (finishes with 24 or fewer)",
-   "ticker": "KXNBAPTS-26OCT24WASCHI-WASTYOUNG3-25",
-   "side": "NO",
-   "price": 0.69,
-   "win_prob": 0.8274,
-   "edge": 0.1224,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "YES: VJ Edgecombe: 4+",
-   "ticker": "KXNBAAST-26OCT24MILPHI-PHIVEDGECOMBE77-4",
+   "label": "YES: Sam Merrill: 15+",
+   "ticker": "KXNBAPTS-26OCT24BKNCLE-CLESMERRILL5-15",
    "side": "YES",
-   "price": 0.41,
-   "win_prob": 0.5431,
-   "edge": 0.1162,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Egor D\u00ebmin: 10+ (finishes with 9 or fewer)",
-   "ticker": "KXNBAPTS-26OCT24BKNCLE-BKNEDEMIN8-10",
-   "side": "NO",
-   "price": 0.45,
-   "win_prob": 0.582,
-   "edge": 0.1147,
+   "price": 0.15,
+   "win_prob": 0.2864,
+   "edge": 0.1275,
    "sportsbooks": "no line"
   },
   {
    "label": "NO: Tyler Herro: 20+ (finishes with 19 or fewer)",
    "ticker": "KXNBAPTS-26OCT24MILPHI-MILTHERRO11-20",
    "side": "NO",
-   "price": 0.45,
+   "price": 0.44,
    "win_prob": 0.5792,
-   "edge": 0.1119,
+   "edge": 0.1219,
    "sportsbooks": "no line"
   },
   {
-   "label": "YES: Jaylen Brown: 30+",
-   "ticker": "KXNBAPTS-26OCT24MILPHI-PHIJBROWN7-30",
+   "label": "YES: Jaylen Brown: 25+",
+   "ticker": "KXNBAPTS-26OCT24MILPHI-PHIJBROWN7-25",
    "side": "YES",
-   "price": 0.23,
-   "win_prob": 0.3507,
-   "edge": 0.1083,
+   "price": 0.47,
+   "win_prob": 0.6043,
+   "edge": 0.1169,
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Myles Turner: 6+ (finishes with 5 or fewer)",
-   "ticker": "KXNBAREB-26OCT24MILPHI-MILMTURNER3-6",
-   "side": "NO",
-   "price": 0.58,
-   "win_prob": 0.7027,
-   "edge": 0.1056,
+   "label": "YES: Anfernee Simons: 15+",
+   "ticker": "KXNBAPTS-26OCT24MILPHI-PHIASIMONS5-15",
+   "side": "YES",
+   "price": 0.25,
+   "win_prob": 0.3743,
+   "edge": 0.1111,
    "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Aaron Gordon: 15+ (finishes with 14 or fewer)",
+   "ticker": "KXNBAPTS-26OCT24NOPDEN-DENAGORDON32-15",
+   "side": "NO",
+   "price": 0.41,
+   "win_prob": 0.5338,
+   "edge": 0.1068,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: DeMar DeRozan: 4+ (finishes with 3 or fewer)",
+   "ticker": "KXNBAREB-26OCT24NOPDEN-DENDDEROZAN10-4",
+   "side": "NO",
+   "price": 0.67,
+   "win_prob": 0.7887,
+   "edge": 0.1032,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Brandon Miller: 25+ (finishes with 24 or fewer)",
+   "ticker": "KXNBAPTS-26OCT24MIACHA-CHABMILLER24-25",
+   "side": "NO",
+   "price": 0.56,
+   "win_prob": 0.7149,
+   "edge": 0.1377,
+   "sportsbooks": "disagrees"
   },
   {
    "label": "NO: Giannis Antetokounmpo: 6+ (finishes with 5 or fewer)",
    "ticker": "KXNBAAST-26OCT24MIACHA-MIAGANTETOKOUNMPO7-6",
    "side": "NO",
-   "price": 0.39,
-   "win_prob": 0.5489,
-   "edge": 0.1422,
+   "price": 0.42,
+   "win_prob": 0.5604,
+   "edge": 0.1234,
    "sportsbooks": "disagrees"
   }
  ]
