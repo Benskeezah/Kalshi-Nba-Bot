@@ -2,7 +2,7 @@
   Season 2027: 0 new games to fetch
 Stats: +0 games (latest 2026-10-26T01:00Z).
 Settled 0 earlier predictions.
-1082 open prop markets for 2026-10-26.
-Sportsbook check for 2 game(s) (OKC/PHX, MEM/UTA): 572 prop lines found; Odds API credits left: 350 (6 per game this run).
+1120 open prop markets for 2026-10-26.
+Sportsbook check for 2 game(s) (OKC/PHX, MEM/UTA): 565 prop lines found; Odds API credits left: 332 (6 per game this run).
 Value watchlist: 54 practice pick(s).
 0 pick(s). Report: site/index.html
