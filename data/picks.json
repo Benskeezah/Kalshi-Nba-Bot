@@ -1,186 +1,215 @@
 {
  "date": "2026-10-27",
- "generated_at": "2026-10-27T17:46:40.922060+00:00",
+ "generated_at": "2026-10-27T21:56:50.232949+00:00",
  "mock": false,
  "log": [
-  "Stats: +9 games (latest 2026-10-27T02:00Z).",
-  "Settled 1087 earlier predictions.",
-  "464 open prop markets for 2026-10-27.",
-  "Sportsbook check for 2 game(s) (BKN/BOS, DET/NYK): 558 prop lines found; Odds API credits left: 314 (6 per game this run).",
-  "Value watchlist: 19 practice pick(s)."
+  "Stats: +0 games (latest 2026-10-27T02:00Z).",
+  "Settled 0 earlier predictions.",
+  "492 open prop markets for 2026-10-27.",
+  "Sportsbook check for 2 game(s) (LAL/POR, BKN/BOS): 651 prop lines found; Odds API credits left: 296 (6 per game this run).",
+  "Value watchlist: 21 practice pick(s)."
  ],
- "picks": [],
+ "picks": [
+  {
+   "label": "YES: Damian Lillard: 2+",
+   "ticker": "KXNBAAST-26OCT27PORLAL-PORDLILLARD0-2",
+   "side": "YES",
+   "win_prob": 0.9137,
+   "win_prob_low": 0.8657,
+   "price": 0.85,
+   "breakeven": 0.859,
+   "confidence": "MEDIUM"
+  }
+ ],
  "value_watchlist": [
   {
    "label": "NO: Domantas Sabonis: 6+ (finishes with 5 or fewer)",
    "ticker": "KXNBAAST-26OCT27SACSAS-SACDSABONIS11-6",
    "side": "NO",
-   "price": 0.4,
+   "price": 0.41,
    "win_prob": 0.7005,
-   "edge": 0.2837,
+   "edge": 0.2736,
    "sportsbooks": "no line"
   },
   {
-   "label": "YES: Jrue Holiday: 6+",
-   "ticker": "KXNBAAST-26OCT27PORLAL-PORJHOLIDAY5-6",
-   "side": "YES",
-   "price": 0.18,
-   "win_prob": 0.4451,
-   "edge": 0.2548,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "YES: Collin Sexton: 10+",
-   "ticker": "KXNBAPTS-26OCT27PORLAL-LALCSEXTON10-10",
-   "side": "YES",
-   "price": 0.59,
-   "win_prob": 0.8329,
-   "edge": 0.2259,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "YES: Scoot Henderson: 10+",
-   "ticker": "KXNBAPTS-26OCT27PORLAL-PORSHENDERSON00-10",
-   "side": "YES",
-   "price": 0.51,
-   "win_prob": 0.7349,
-   "edge": 0.2074,
+   "label": "NO: John Collins: 6+ (finishes with 5 or fewer)",
+   "ticker": "KXNBAREB-26OCT27DETNYK-DETJCOLLINS20-6",
+   "side": "NO",
+   "price": 0.29,
+   "win_prob": 0.5534,
+   "edge": 0.249,
    "sportsbooks": "no line"
   },
   {
    "label": "NO: Dylan Harper: 15+ (finishes with 14 or fewer)",
    "ticker": "KXNBAPTS-26OCT27SACSAS-SASDHARPER2-15",
    "side": "NO",
-   "price": 0.35,
+   "price": 0.37,
    "win_prob": 0.5673,
-   "edge": 0.2013,
+   "edge": 0.1809,
    "sportsbooks": "no line"
   },
   {
-   "label": "YES: Jrue Holiday: 4+",
-   "ticker": "KXNBAAST-26OCT27PORLAL-PORJHOLIDAY5-4",
-   "side": "YES",
-   "price": 0.5,
-   "win_prob": 0.7169,
-   "edge": 0.1994,
+   "label": "NO: Cade Cunningham: 15+ (finishes with 14 or fewer)",
+   "ticker": "KXNBAPTS-26OCT27DETNYK-DETCCUNNINGHAM2-15",
+   "side": "NO",
+   "price": 0.13,
+   "win_prob": 0.3094,
+   "edge": 0.1715,
    "sportsbooks": "no line"
   },
   {
-   "label": "YES: Jrue Holiday: 10+",
-   "ticker": "KXNBAPTS-26OCT27PORLAL-PORJHOLIDAY5-10",
-   "side": "YES",
-   "price": 0.55,
-   "win_prob": 0.7589,
-   "edge": 0.1915,
+   "label": "NO: Zach LaVine: 15+ (finishes with 14 or fewer)",
+   "ticker": "KXNBAPTS-26OCT27SACSAS-SACZLAVINE8-15",
+   "side": "NO",
+   "price": 0.22,
+   "win_prob": 0.4,
+   "edge": 0.168,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Domantas Sabonis: 4+ (finishes with 3 or fewer)",
+   "ticker": "KXNBAAST-26OCT27SACSAS-SACDSABONIS11-4",
+   "side": "NO",
+   "price": 0.21,
+   "win_prob": 0.3841,
+   "edge": 0.1625,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Cade Cunningham: 25+ (finishes with 24 or fewer)",
+   "ticker": "KXNBAPTS-26OCT27DETNYK-DETCCUNNINGHAM2-25",
+   "side": "NO",
+   "price": 0.6,
+   "win_prob": 0.7768,
+   "edge": 0.16,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: John Collins: 8+ (finishes with 7 or fewer)",
+   "ticker": "KXNBAREB-26OCT27DETNYK-DETJCOLLINS20-8",
+   "side": "NO",
+   "price": 0.6,
+   "win_prob": 0.7761,
+   "edge": 0.1593,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Cade Cunningham: 20+ (finishes with 19 or fewer)",
+   "ticker": "KXNBAPTS-26OCT27DETNYK-DETCCUNNINGHAM2-20",
+   "side": "NO",
+   "price": 0.39,
+   "win_prob": 0.564,
+   "edge": 0.1573,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: John Collins: 15+ (finishes with 14 or fewer)",
+   "ticker": "KXNBAPTS-26OCT27DETNYK-DETJCOLLINS20-15",
+   "side": "NO",
+   "price": 0.48,
+   "win_prob": 0.6544,
+   "edge": 0.157,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Dylan Harper: 10+ (finishes with 9 or fewer)",
+   "ticker": "KXNBAPTS-26OCT27SACSAS-SASDHARPER2-10",
+   "side": "NO",
+   "price": 0.14,
+   "win_prob": 0.2991,
+   "edge": 0.1507,
    "sportsbooks": "no line"
   },
   {
    "label": "NO: Zach LaVine: 4+ (finishes with 3 or fewer)",
    "ticker": "KXNBAREB-26OCT27SACSAS-SACZLAVINE8-4",
    "side": "NO",
-   "price": 0.55,
+   "price": 0.59,
    "win_prob": 0.7564,
-   "edge": 0.1891,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "YES: Ja Morant: 8+",
-   "ticker": "KXNBAAST-26OCT27PORLAL-PORJMORANT1-8",
-   "side": "YES",
-   "price": 0.31,
-   "win_prob": 0.4949,
-   "edge": 0.1699,
+   "edge": 0.1495,
    "sportsbooks": "no line"
   },
   {
    "label": "NO: Dylan Harper: 6+ (finishes with 5 or fewer)",
    "ticker": "KXNBAREB-26OCT27SACSAS-SASDHARPER2-6",
    "side": "NO",
-   "price": 0.63,
+   "price": 0.65,
    "win_prob": 0.7992,
-   "edge": 0.1529,
+   "edge": 0.1333,
    "sportsbooks": "no line"
   },
   {
-   "label": "YES: Sandro Mamukelashvili: 10+",
-   "ticker": "KXNBAPTS-26OCT27PORLAL-LALSMAMUKELASHVILI54-10",
-   "side": "YES",
-   "price": 0.35,
-   "win_prob": 0.5062,
-   "edge": 0.1403,
+   "label": "NO: Zach LaVine: 20+ (finishes with 19 or fewer)",
+   "ticker": "KXNBAPTS-26OCT27SACSAS-SACZLAVINE8-20",
+   "side": "NO",
+   "price": 0.47,
+   "win_prob": 0.6157,
+   "edge": 0.1282,
    "sportsbooks": "no line"
   },
   {
-   "label": "YES: Jrue Holiday: 4+",
-   "ticker": "KXNBAREB-26OCT27PORLAL-PORJHOLIDAY5-4",
-   "side": "YES",
-   "price": 0.43,
-   "win_prob": 0.5869,
-   "edge": 0.1397,
+   "label": "NO: Victor Wembanyama: 20+ (finishes with 19 or fewer)",
+   "ticker": "KXNBAPTS-26OCT27SACSAS-SASVWEMBANYAMA1-20",
+   "side": "NO",
+   "price": 0.24,
+   "win_prob": 0.3661,
+   "edge": 0.1133,
    "sportsbooks": "no line"
   },
   {
    "label": "NO: Victor Wembanyama: 25+ (finishes with 24 or fewer)",
    "ticker": "KXNBAPTS-26OCT27SACSAS-SASVWEMBANYAMA1-25",
    "side": "NO",
-   "price": 0.44,
+   "price": 0.46,
    "win_prob": 0.5883,
-   "edge": 0.1311,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "YES: Deni Avdija: 6+",
-   "ticker": "KXNBAAST-26OCT27PORLAL-PORDAVDIJA8-6",
-   "side": "YES",
-   "price": 0.43,
-   "win_prob": 0.5771,
-   "edge": 0.1299,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "YES: Quentin Grimes: 15+",
-   "ticker": "KXNBAPTS-26OCT27PORLAL-LALQGRIMES5-15",
-   "side": "YES",
-   "price": 0.14,
-   "win_prob": 0.2733,
-   "edge": 0.1248,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "YES: Ja Morant: 6+",
-   "ticker": "KXNBAAST-26OCT27PORLAL-PORJMORANT1-6",
-   "side": "YES",
-   "price": 0.6,
-   "win_prob": 0.7352,
-   "edge": 0.1184,
+   "edge": 0.1109,
    "sportsbooks": "no line"
   },
   {
    "label": "NO: Dylan Harper: 20+ (finishes with 19 or fewer)",
    "ticker": "KXNBAPTS-26OCT27SACSAS-SASDHARPER2-20",
    "side": "NO",
-   "price": 0.65,
+   "price": 0.66,
    "win_prob": 0.778,
-   "edge": 0.1121,
+   "edge": 0.1023,
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Walker Kessler: 10+ (finishes with 9 or fewer)",
-   "ticker": "KXNBAREB-26OCT27PORLAL-LALWKESSLER14-10",
-   "side": "NO",
-   "price": 0.46,
-   "win_prob": 0.5881,
-   "edge": 0.1107,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "YES: Quentin Grimes: 10+",
-   "ticker": "KXNBAPTS-26OCT27PORLAL-LALQGRIMES5-10",
+   "label": "YES: Miles McBride: 10+",
+   "ticker": "KXNBAPTS-26OCT27DETNYK-NYKMMCBRIDE2-10",
    "side": "YES",
-   "price": 0.41,
-   "win_prob": 0.5273,
-   "edge": 0.1004,
+   "price": 0.28,
+   "win_prob": 0.3944,
+   "edge": 0.1003,
    "sportsbooks": "no line"
+  },
+  {
+   "label": "YES: Collin Sexton: 10+",
+   "ticker": "KXNBAPTS-26OCT27PORLAL-LALCSEXTON10-10",
+   "side": "YES",
+   "price": 0.56,
+   "win_prob": 0.743,
+   "edge": 0.1658,
+   "sportsbooks": "disagrees"
+  },
+  {
+   "label": "YES: Scoot Henderson: 10+",
+   "ticker": "KXNBAPTS-26OCT27PORLAL-PORSHENDERSON00-10",
+   "side": "YES",
+   "price": 0.5,
+   "win_prob": 0.6378,
+   "edge": 0.1203,
+   "sportsbooks": "disagrees"
+  },
+  {
+   "label": "YES: Jrue Holiday: 6+",
+   "ticker": "KXNBAAST-26OCT27PORLAL-PORJHOLIDAY5-6",
+   "side": "YES",
+   "price": 0.22,
+   "win_prob": 0.3366,
+   "edge": 0.1046,
+   "sportsbooks": "disagrees"
   }
  ]
 }

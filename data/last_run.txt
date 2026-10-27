@@ -1,8 +1,9 @@
   Season 2026: 0 new games to fetch
-  Season 2027: 9 new games to fetch
-Stats: +9 games (latest 2026-10-27T02:00Z).
-Settled 1087 earlier predictions.
-464 open prop markets for 2026-10-27.
-Sportsbook check for 2 game(s) (BKN/BOS, DET/NYK): 558 prop lines found; Odds API credits left: 314 (6 per game this run).
-Value watchlist: 19 practice pick(s).
-0 pick(s). Report: site/index.html
+  Season 2027: 0 new games to fetch
+Stats: +0 games (latest 2026-10-27T02:00Z).
+Settled 0 earlier predictions.
+492 open prop markets for 2026-10-27.
+Sportsbook check for 2 game(s) (LAL/POR, BKN/BOS): 651 prop lines found; Odds API credits left: 296 (6 per game this run).
+Value watchlist: 21 practice pick(s).
+1 pick(s). Report: site/index.html
+  YES: Damian Lillard: 2+  (91%)
