@@ -1,8 +1,8 @@
   Season 2026: 0 new games to fetch
-  Season 2027: 0 new games to fetch
-Stats: +0 games (latest 2026-10-28T03:00Z).
-Settled 0 earlier predictions.
-1413 open prop markets for 2026-10-28.
-Sportsbook check for 2 game(s) (ORL/TOR, DAL/OKC): 574 prop lines found; Odds API credits left: 260 (6 per game this run).
-Value watchlist: 83 practice pick(s).
+  Season 2027: 12 new games to fetch
+Stats: +12 games (latest 2026-10-29T02:30Z).
+Settled 1400 earlier predictions.
+373 open prop markets for 2026-10-29.
+Sportsbook check for 2 game(s) (NOP/SAC, MEM/POR): 531 prop lines found; Odds API credits left: 242 (6 per game this run).
+Value watchlist: 3 practice pick(s).
 0 pick(s). Report: site/index.html
