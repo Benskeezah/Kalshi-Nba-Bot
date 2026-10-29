@@ -1,32 +1,50 @@
 {
  "date": "2026-10-29",
- "generated_at": "2026-10-29T17:44:27.357551+00:00",
+ "generated_at": "2026-10-29T22:03:39.937289+00:00",
  "mock": false,
  "log": [
-  "Stats: +12 games (latest 2026-10-29T02:30Z).",
-  "Settled 1400 earlier predictions.",
-  "373 open prop markets for 2026-10-29.",
-  "Sportsbook check for 2 game(s) (NOP/SAC, MEM/POR): 531 prop lines found; Odds API credits left: 242 (6 per game this run).",
-  "Value watchlist: 3 practice pick(s)."
+  "Stats: +0 games (latest 2026-10-29T02:30Z).",
+  "Settled 0 earlier predictions.",
+  "424 open prop markets for 2026-10-29.",
+  "Sportsbook check for 2 game(s) (MEM/POR, NOP/SAC): 591 prop lines found; Odds API credits left: 224 (6 per game this run).",
+  "Value watchlist: 5 practice pick(s)."
  ],
  "picks": [],
  "value_watchlist": [
   {
-   "label": "NO: Zach LaVine: 15+ (finishes with 14 or fewer)",
-   "ticker": "KXNBAPTS-26OCT29SACNOP-SACZLAVINE8-15",
+   "label": "YES: Scoot Henderson: 2+",
+   "ticker": "KXNBAAST-26OCT29MEMPOR-PORSHENDERSON00-2",
+   "side": "YES",
+   "price": 0.61,
+   "win_prob": 0.7832,
+   "edge": 0.1565,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Aaron Wiggins: 10+ (finishes with 9 or fewer)",
+   "ticker": "KXNBAPTS-26OCT29CLEATL-ATLAWIGGINS2-10",
    "side": "NO",
-   "price": 0.15,
-   "win_prob": 0.2689,
-   "edge": 0.11,
-   "sportsbooks": "agrees"
+   "price": 0.38,
+   "win_prob": 0.5502,
+   "edge": 0.1537,
+   "sportsbooks": "no line"
   },
   {
    "label": "NO: Evan Mobley: 4+ (finishes with 3 or fewer)",
    "ticker": "KXNBAAST-26OCT29CLEATL-CLEEMOBLEY4-4",
    "side": "NO",
-   "price": 0.48,
+   "price": 0.51,
    "win_prob": 0.6454,
-   "edge": 0.1479,
+   "edge": 0.1179,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Jalen Johnson: 20+ (finishes with 19 or fewer)",
+   "ticker": "KXNBAPTS-26OCT29CLEATL-ATLJJOHNSON1-20",
+   "side": "NO",
+   "price": 0.41,
+   "win_prob": 0.535,
+   "edge": 0.108,
    "sportsbooks": "no line"
   },
   {
@@ -34,8 +52,8 @@
    "ticker": "KXNBAPTS-26OCT29MEMPOR-MEMJGRANT9-10",
    "side": "YES",
    "price": 0.53,
-   "win_prob": 0.6476,
-   "edge": 0.1002,
+   "win_prob": 0.6483,
+   "edge": 0.1009,
    "sportsbooks": "disagrees"
   }
  ]
