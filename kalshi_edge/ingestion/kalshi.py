@@ -12,6 +12,8 @@ from __future__ import annotations
 
 import json
 import os
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
@@ -141,9 +143,25 @@ class KalshiClient:
         if params:
             url += "?" + urllib.parse.urlencode({k: v for k, v in params.items() if v is not None})
         req = urllib.request.Request(url, method="GET",
-                                     headers={"Accept": "application/json"})
-        with urllib.request.urlopen(req, timeout=self.timeout) as r:
-            return json.loads(r.read().decode())
+                                     headers={"Accept": "application/json", "User-Agent": "kalshi-edge-research"})
+        # Kalshi sometimes refuses or rate-limits a request; retry with growing pauses.
+        delays = (2, 5, 12, 25)
+        for attempt in range(len(delays) + 1):
+            try:
+                with urllib.request.urlopen(req, timeout=self.timeout) as r:
+                    return json.loads(r.read().decode())
+            except urllib.error.HTTPError as e:
+                if e.code not in (403, 408, 425, 429, 500, 502, 503, 504) or attempt == len(delays):
+                    raise
+                wait = delays[attempt]
+                ra = e.headers.get("Retry-After") if e.headers else None
+                if ra and ra.isdigit():
+                    wait = max(wait, min(int(ra), 60))
+            except (urllib.error.URLError, TimeoutError, ConnectionError):
+                if attempt == len(delays):
+                    raise
+                wait = delays[attempt]
+            time.sleep(wait)
 
     def market(self, ticker: str, with_orderbook: bool = True) -> MarketSnapshot:
         m = self._get(f"/markets/{ticker}")["market"]

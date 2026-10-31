@@ -138,3 +138,47 @@ def test_value_watchlist_rules_and_scoring():
     r = value_results(rows)
     assert r["All watchlist picks"]["n"] == 1 and r["Sportsbook disagrees"]["hit"] == 1.0
     assert r["All watchlist picks"]["result"] == pytest.approx(0.40 - 0.07 * 0.6 * 0.4)
+
+
+def test_daily_refuses_to_publish_when_kalshi_is_down(tmp_path):
+    from datetime import date
+    import urllib.error
+    from kalshi_edge.daily import KalshiUnavailable, run_daily
+
+    class Down:
+        def markets(self, **kw):
+            raise urllib.error.HTTPError("u", 403, "Forbidden", {}, None)
+
+        def market(self, *a, **kw):
+            raise urllib.error.HTTPError("u", 403, "Forbidden", {}, None)
+
+    try:
+        run_daily(Down(), str(tmp_path / "site"), day=date(2026, 10, 31), now=TIP, stats=None,
+                  store=None, use_live=False, update_stats=False, send=False)
+        raised = False
+    except KalshiUnavailable:
+        raised = True
+    assert raised and not (tmp_path / "site" / "index.html").exists()
+
+
+def test_kalshi_client_retries(monkeypatch=None):
+    import io, json as _json, urllib.error, urllib.request
+    from kalshi_edge.ingestion import kalshi as K
+    calls = {"n": 0}
+
+    class Resp(io.BytesIO):
+        def __enter__(self): return self
+        def __exit__(self, *a): return False
+
+    def fake(req, timeout=0):
+        calls["n"] += 1
+        if calls["n"] < 3:
+            raise urllib.error.HTTPError(req.full_url, 429, "Too Many", {}, None)
+        return Resp(_json.dumps({"markets": [], "cursor": ""}).encode())
+    orig_open, orig_sleep = urllib.request.urlopen, K.time.sleep
+    urllib.request.urlopen, K.time.sleep = fake, (lambda s: None)
+    try:
+        assert K.KalshiClient(base="https://x")._get("/markets") == {"markets": [], "cursor": ""}
+        assert calls["n"] == 3
+    finally:
+        urllib.request.urlopen, K.time.sleep = orig_open, orig_sleep

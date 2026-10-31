@@ -47,16 +47,26 @@ def today_et(now: Optional[datetime] = None) -> date:
     return (now or datetime.now(timezone.utc)).astimezone(ET).date()
 
 
-def todays_prop_markets(client, day: date) -> list:
-    out = []
+class KalshiUnavailable(RuntimeError):
+    """Kalshi could not be reached, so there is nothing trustworthy to publish."""
+
+
+def todays_prop_markets(client, day: date, wanted: Optional[set] = None) -> list:
+    out, failed = [], []
     for series in PROP_SERIES:
+        if wanted is not None and series not in wanted:
+            continue
         try:
             for m in client.markets(series_ticker=series, status="open"):
                 t = parse_prop_ticker(m.ticker)
                 if t and t["date"] == day:
                     out.append(m)
         except Exception as e:
-            print(f"  could not list {series}: {e.__class__.__name__}")
+            code = getattr(e, "code", "")
+            print(f"  could not list {series}: {e.__class__.__name__} {code}".rstrip(), flush=True)
+            failed.append(series)
+    if failed and not out:
+        raise KalshiUnavailable(f"Kalshi refused the market list ({', '.join(failed)}) after several retries.")
     return out
 
 
@@ -126,7 +136,7 @@ def run_daily(client, out_dir: str, *, day: Optional[date] = None, now: Optional
         log.append(f"Settled {settled} earlier predictions.")
 
     # 3-4. today's markets, stats model only (no paid lookups yet)
-    markets = [m for m in todays_prop_markets(client, day) if m.series_ticker in wanted]
+    markets = todays_prop_markets(client, day, wanted)
     log.append(f"{len(markets)} open prop markets for {day}.")
     reg1 = EstimatorRegistry(use_live, evidence, stats, stats_mock)
     reg1.props.odds_games = set()

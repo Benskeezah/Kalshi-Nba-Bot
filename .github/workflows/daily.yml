@@ -75,8 +75,10 @@ jobs:
           git pull --rebase --autostash "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}" main || true
           git push "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}" HEAD:main
 
+      # Only publish when the analysis succeeded, so a failed run never replaces
+      # the last good report with an empty one.
       - uses: actions/upload-pages-artifact@v5
-        if: always()
+        if: success()
         with:
           path: site
 

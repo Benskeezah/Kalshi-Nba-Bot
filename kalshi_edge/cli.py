@@ -139,13 +139,20 @@ def main(argv=None) -> int:
 
     if args.cmd == "daily":
         from datetime import date as _date
-        from .daily import run_daily
-        out = run_daily(
+        from .daily import KalshiUnavailable, notify, run_daily
+        try:
+            out = run_daily(
             _client(args), args.out, day=_date.fromisoformat(args.date) if args.date else None,
             stats=StatsDB(), evidence=EvidenceFile(args.evidence) if args.evidence else None,
             store=store, use_live=not args.fixtures, update_stats=not args.no_stats_update,
             min_prob=args.min_prob, allow_low=args.allow_low, page_url=args.page_url,
             send=not args.no_notify)
+        except KalshiUnavailable as e:
+            print(f"{e} Keeping the last published report.")
+            if not args.no_notify:
+                notify("Kalshi data unavailable", f"{e} Your last report is still up; the next run will try again.",
+                       args.page_url)
+            return 3
         print("\n".join(out["log"]))
         print(f"{len(out['picks'])} pick(s). Report: {os.path.join(args.out, 'index.html')}")
         for line in [p["label"] + f"  ({p['win_prob']:.0%})" for p in out["picks"]]:
