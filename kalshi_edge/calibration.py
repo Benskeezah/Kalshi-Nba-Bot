@@ -230,4 +230,4 @@ def pattern_html(rows: list[dict], min_p: float = 0.82) -> str:
         parts.append(f"<h3>{title}</h3><div class='tbl'><table><thead><tr><th>Group</th><th>Props</th>"
                      "<th>Games</th><th>Hit</th><th>Model said</th><th>Kalshi</th><th>Result</th></tr></thead>"
                      f"<tbody>{body}</tbody></table></div>")
-    return "<section class='sheet'>" + "".join(parts) + "</section>"
+    return "<section class='sheet' id='hitting'>" + "".join(parts) + "</section>"

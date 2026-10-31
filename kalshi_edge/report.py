@@ -158,6 +158,12 @@ ul{margin:0;padding-left:18px} li{margin:2px 0}
 .verdict{border-top:1px solid var(--rule);padding-top:12px}
 .mono{font-family:var(--mono);font-size:.82rem;overflow-wrap:anywhere}
 details summary{cursor:pointer;color:var(--accent);font-size:.85rem}
+.jump{display:flex;flex-wrap:wrap;gap:8px;position:sticky;top:env(safe-area-inset-top,0px);z-index:5;
+  background:var(--paper);padding-block:8px;border-bottom:1px solid var(--rule)}
+.jump a{font-size:.85rem;padding:6px 12px;border:1px solid var(--rule);border-radius:999px;
+  background:var(--sheet);color:var(--accent);text-decoration:none}
+.jump a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+[id]{scroll-margin-top:64px}
 """
 
 JS = """
@@ -303,9 +309,16 @@ def html_report(results: list[Analysis], title: str = "Kalshi Edge Scan", note: 
   {f"<p class='note'>{_e(note)}</p>" if note else ""}
   <p class="note">Ranked by after-cost expected value at the pessimistic end of the model's range, discounted for
   confidence, liquidity and time to close, so the biggest raw edge is not automatically first. Tap a column to sort.</p>
-  {_picks_html(picks, min_prob)}
-  {value_section}
-  <h2>All markets</h2>
+  <nav class="jump" aria-label="Sections">
+    {'<a href="#picks">Picks</a>' if picks is not None else ''}
+    {'<a href="#watchlist">Value watchlist</a>' if value_section else ''}
+    <a href="#all-markets">All markets ({len(results)})</a>
+    {'<a href="#hitting">What&#39;s hitting</a>' if "What's hitting" in footer else ''}
+    {'<a href="#track-record">Track record</a>' if "Track record" in footer else ''}
+  </nav>
+  <div id="picks">{_picks_html(picks, min_prob)}</div>
+  <div id="watchlist">{value_section}</div>
+  <h2 id="all-markets">All markets</h2>
   <div class="tbl"><table><thead><tr>{head_html}</tr></thead>
   <tbody>{''.join(rows)}</tbody></table></div>
   {''.join(_sheet(a) for a in results if detail_tickers is None or a.market.ticker in detail_tickers)}

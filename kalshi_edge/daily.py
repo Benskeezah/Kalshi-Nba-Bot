@@ -207,7 +207,7 @@ def run_daily(client, out_dir: str, *, day: Optional[date] = None, now: Optional
             + ("" if cal_n >= 50 else f" Only {cal_n} settled predictions so far, so the model's win "
                "probabilities are not yet verified. Treat picks as research, not certainties."))
     patterns = pattern_html(store.resolved()) if store is not None else ""
-    footer = (f"{patterns}<section class='sheet'><h2>Track record</h2><pre class='mono' "
+    footer = (f"{patterns}<section class='sheet' id='track-record'><h2>Track record</h2><pre class='mono' "
               f"style='white-space:pre-wrap'>{cal}</pre></section>")
     vsec = value_html(vpicks, store.resolved() if store is not None else [])
     page = html_report(results, f"NBA Props {day.strftime('%b %d')}", note=note, picks=picks,
