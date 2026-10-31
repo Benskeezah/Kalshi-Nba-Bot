@@ -1,11 +1,8 @@
   Season 2026: 0 new games to fetch
   Season 2027: 0 new games to fetch
-  could not list KXNBAPTS: HTTPError
-  could not list KXNBAREB: HTTPError
-  could not list KXNBAAST: HTTPError
 Stats: +0 games (latest 2026-10-31T19:00Z).
 Settled 0 earlier predictions.
-0 open prop markets for 2026-10-31.
-Sportsbook check skipped: no games today.
-Value watchlist: 0 practice pick(s).
+749 open prop markets for 2026-10-31.
+Sportsbook check for 2 game(s) (HOU/OKC, MIN/SAS): 650 prop lines found; Odds API credits left: 134 (6 per game this run).
+Value watchlist: 19 practice pick(s).
 0 pick(s). Report: site/index.html

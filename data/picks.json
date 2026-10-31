@@ -1,14 +1,186 @@
 {
  "date": "2026-10-31",
- "generated_at": "2026-10-31T21:49:53.645137+00:00",
+ "generated_at": "2026-10-31T21:52:39.854005+00:00",
  "mock": false,
  "log": [
   "Stats: +0 games (latest 2026-10-31T19:00Z).",
   "Settled 0 earlier predictions.",
-  "0 open prop markets for 2026-10-31.",
-  "Sportsbook check skipped: no games today.",
-  "Value watchlist: 0 practice pick(s)."
+  "749 open prop markets for 2026-10-31.",
+  "Sportsbook check for 2 game(s) (HOU/OKC, MIN/SAS): 650 prop lines found; Odds API credits left: 134 (6 per game this run).",
+  "Value watchlist: 19 practice pick(s)."
  ],
  "picks": [],
- "value_watchlist": []
+ "value_watchlist": [
+  {
+   "label": "NO: Naz Reid: 15+ (finishes with 14 or fewer)",
+   "ticker": "KXNBAPTS-26OCT31PHICHA-CHANREID0-15",
+   "side": "NO",
+   "price": 0.33,
+   "win_prob": 0.6107,
+   "edge": 0.2652,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Brandon Miller: 20+ (finishes with 19 or fewer)",
+   "ticker": "KXNBAPTS-26OCT31PHICHA-CHABMILLER24-20",
+   "side": "NO",
+   "price": 0.23,
+   "win_prob": 0.4216,
+   "edge": 0.1792,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Naz Reid: 20+ (finishes with 19 or fewer)",
+   "ticker": "KXNBAPTS-26OCT31PHICHA-CHANREID0-20",
+   "side": "NO",
+   "price": 0.63,
+   "win_prob": 0.8238,
+   "edge": 0.1775,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Brandon Miller: 25+ (finishes with 24 or fewer)",
+   "ticker": "KXNBAPTS-26OCT31PHICHA-CHABMILLER24-25",
+   "side": "NO",
+   "price": 0.47,
+   "win_prob": 0.6645,
+   "edge": 0.177,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "YES: Cameron Boozer: 10+",
+   "ticker": "KXNBAREB-26OCT31SACMEM-MEMCBOOZER27-10",
+   "side": "YES",
+   "price": 0.37,
+   "win_prob": 0.5504,
+   "edge": 0.1641,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: VJ Edgecombe: 15+ (finishes with 14 or fewer)",
+   "ticker": "KXNBAPTS-26OCT31PHICHA-PHIVEDGECOMBE77-15",
+   "side": "NO",
+   "price": 0.44,
+   "win_prob": 0.6199,
+   "edge": 0.1627,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Brandon Miller: 30+ (finishes with 29 or fewer)",
+   "ticker": "KXNBAPTS-26OCT31PHICHA-CHABMILLER24-30",
+   "side": "NO",
+   "price": 0.67,
+   "win_prob": 0.8424,
+   "edge": 0.1569,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "YES: Kingston Flemings: 4+",
+   "ticker": "KXNBAAST-26OCT31ATLNOP-ATLKFLEMINGS4-4",
+   "side": "YES",
+   "price": 0.45,
+   "win_prob": 0.612,
+   "edge": 0.1447,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Tyrese Maxey: 6+ (finishes with 5 or fewer)",
+   "ticker": "KXNBAAST-26OCT31PHICHA-PHITMAXEY0-6",
+   "side": "NO",
+   "price": 0.45,
+   "win_prob": 0.6091,
+   "edge": 0.1418,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "YES: Saddiq Bey: 15+",
+   "ticker": "KXNBAPTS-26OCT31ATLNOP-NOPSBEY41-15",
+   "side": "YES",
+   "price": 0.37,
+   "win_prob": 0.5187,
+   "edge": 0.1324,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "YES: Cameron Boozer: 8+",
+   "ticker": "KXNBAREB-26OCT31SACMEM-MEMCBOOZER27-8",
+   "side": "YES",
+   "price": 0.59,
+   "win_prob": 0.7346,
+   "edge": 0.1277,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Aaron Wiggins: 10+ (finishes with 9 or fewer)",
+   "ticker": "KXNBAPTS-26OCT31ATLNOP-ATLAWIGGINS2-10",
+   "side": "NO",
+   "price": 0.36,
+   "win_prob": 0.499,
+   "edge": 0.1229,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Tyrese Maxey: 30+ (finishes with 29 or fewer)",
+   "ticker": "KXNBAPTS-26OCT31PHICHA-PHITMAXEY0-30",
+   "side": "NO",
+   "price": 0.63,
+   "win_prob": 0.7621,
+   "edge": 0.1158,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Tyrese Maxey: 25+ (finishes with 24 or fewer)",
+   "ticker": "KXNBAPTS-26OCT31PHICHA-PHITMAXEY0-25",
+   "side": "NO",
+   "price": 0.4,
+   "win_prob": 0.525,
+   "edge": 0.1082,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "YES: Zach Edey: 15+",
+   "ticker": "KXNBAPTS-26OCT31SACMEM-MEMZEDEY14-15",
+   "side": "YES",
+   "price": 0.12,
+   "win_prob": 0.2341,
+   "edge": 0.1067,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "YES: Jaime Jaquez Jr.: 4+",
+   "ticker": "KXNBAAST-26OCT31CLEMIL-MILJJAQUEZ24-4",
+   "side": "YES",
+   "price": 0.42,
+   "win_prob": 0.539,
+   "edge": 0.102,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Myles Turner: 10+ (finishes with 9 or fewer)",
+   "ticker": "KXNBAPTS-26OCT31CLEMIL-MILMTURNER3-10",
+   "side": "NO",
+   "price": 0.46,
+   "win_prob": 0.5786,
+   "edge": 0.1013,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Jared McCain: 10+ (finishes with 9 or fewer)",
+   "ticker": "KXNBAPTS-26OCT31OKCHOU-OKCJMCCAIN3-10",
+   "side": "NO",
+   "price": 0.25,
+   "win_prob": 0.3915,
+   "edge": 0.1283,
+   "sportsbooks": "disagrees"
+  },
+  {
+   "label": "NO: Ajay Mitchell: 20+ (finishes with 19 or fewer)",
+   "ticker": "KXNBAPTS-26OCT31OKCHOU-OKCAMITCHELL25-20",
+   "side": "NO",
+   "price": 0.58,
+   "win_prob": 0.7098,
+   "edge": 0.1128,
+   "sportsbooks": "disagrees"
+  }
+ ]
 }
