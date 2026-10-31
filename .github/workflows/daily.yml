@@ -49,6 +49,7 @@ jobs:
           set -o pipefail
           mkdir -p data site
           python -u -m kalshi_edge daily --out site 2>&1 | tee data/last_run.txt
+          python -m kalshi_edge.page_check site/index.html data/page_check.txt || true
 
       - name: Save stats database
         if: always()
@@ -68,7 +69,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           cp site/picks.json data/picks.json 2>/dev/null || true
-          for f in data/predictions.sqlite data/last_run.txt data/picks.json data/odds_usage.json; do [ -f "$f" ] && git add -f "$f"; done
+          for f in data/predictions.sqlite data/last_run.txt data/picks.json data/odds_usage.json data/page_check.txt; do [ -f "$f" ] && git add -f "$f"; done
           git diff --cached --quiet && exit 0
           git commit -m "Daily run $(date -u +%Y-%m-%d)"
           git pull --rebase --autostash "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}" main || true
