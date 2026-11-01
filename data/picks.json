@@ -1,13 +1,13 @@
 {
  "date": "2026-11-01",
- "generated_at": "2026-11-01T17:30:25.002265+00:00",
+ "generated_at": "2026-11-01T21:56:12.845417+00:00",
  "mock": false,
  "log": [
-  "Stats: +6 games (latest 2026-11-01T00:30Z).",
-  "Settled 728 earlier predictions.",
-  "391 open prop markets for 2026-11-01.",
-  "Sportsbook check for 1 game(s) (LAL/TOR): 318 prop lines found; Odds API credits left: 485 (9 per game this run). Limited: 494 credits left for 60 runs this month at ~6 per game.",
-  "Value watchlist: 14 practice pick(s)."
+  "Stats: +0 games (latest 2026-11-01T00:30Z).",
+  "Settled 5 earlier predictions.",
+  "401 open prop markets for 2026-11-01.",
+  "Sportsbook check for 1 game(s) (LAL/TOR): 328 prop lines found; Odds API credits left: 470 (9 per game this run). Limited: 479 credits left for 60 runs this month at ~7 per game.",
+  "Value watchlist: 6 practice pick(s)."
  ],
  "picks": [],
  "value_watchlist": [
@@ -15,36 +15,9 @@
    "label": "NO: Rui Hachimura: 15+ (finishes with 14 or fewer)",
    "ticker": "KXNBAPTS-26NOV01LACGSW-LACRHACHIMURA28-15",
    "side": "NO",
-   "price": 0.45,
-   "win_prob": 0.7585,
-   "edge": 0.2911,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Franz Wagner: 6+ (finishes with 5 or fewer)",
-   "ticker": "KXNBAAST-26NOV01BOSORL-ORLFWAGNER22-6",
-   "side": "NO",
    "price": 0.44,
-   "win_prob": 0.721,
-   "edge": 0.2637,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Rui Hachimura: 4+ (finishes with 3 or fewer)",
-   "ticker": "KXNBAREB-26NOV01LACGSW-LACRHACHIMURA28-4",
-   "side": "NO",
-   "price": 0.29,
-   "win_prob": 0.5155,
-   "edge": 0.2111,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Anthony Black: 4+ (finishes with 3 or fewer)",
-   "ticker": "KXNBAREB-26NOV01BOSORL-ORLABLACK0-4",
-   "side": "NO",
-   "price": 0.47,
-   "win_prob": 0.6535,
-   "edge": 0.1661,
+   "win_prob": 0.7585,
+   "edge": 0.3012,
    "sportsbooks": "no line"
   },
   {
@@ -57,85 +30,40 @@
    "sportsbooks": "no line"
   },
   {
+   "label": "NO: Yaxel Lendeborg: 4+ (finishes with 3 or fewer)",
+   "ticker": "KXNBAAST-26NOV01LACGSW-GSWYLENDEBORG1-4",
+   "side": "NO",
+   "price": 0.46,
+   "win_prob": 0.6239,
+   "edge": 0.1465,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Darius Garland: 25+ (finishes with 24 or fewer)",
+   "ticker": "KXNBAPTS-26NOV01LACGSW-LACDGARLAND10-25",
+   "side": "NO",
+   "price": 0.59,
+   "win_prob": 0.7441,
+   "edge": 0.1372,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Aaron Nesmith: 4+ (finishes with 3 or fewer)",
+   "ticker": "KXNBAREB-26NOV01BKNIND-INDANESMITH23-4",
+   "side": "NO",
+   "price": 0.54,
+   "win_prob": 0.6867,
+   "edge": 0.1293,
+   "sportsbooks": "no line"
+  },
+  {
    "label": "NO: Andrew Nembhard: 4+ (finishes with 3 or fewer)",
    "ticker": "KXNBAREB-26NOV01BKNIND-INDANEMBHARD2-4",
    "side": "NO",
-   "price": 0.59,
+   "price": 0.6,
    "win_prob": 0.7426,
-   "edge": 0.1356,
+   "edge": 0.1258,
    "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Franz Wagner: 20+ (finishes with 19 or fewer)",
-   "ticker": "KXNBAPTS-26NOV01BOSORL-ORLFWAGNER22-20",
-   "side": "NO",
-   "price": 0.4,
-   "win_prob": 0.5447,
-   "edge": 0.1279,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Anthony Black: 15+ (finishes with 14 or fewer)",
-   "ticker": "KXNBAPTS-26NOV01BOSORL-ORLABLACK0-15",
-   "side": "NO",
-   "price": 0.57,
-   "win_prob": 0.7146,
-   "edge": 0.1274,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Franz Wagner: 25+ (finishes with 24 or fewer)",
-   "ticker": "KXNBAPTS-26NOV01BOSORL-ORLFWAGNER22-25",
-   "side": "NO",
-   "price": 0.67,
-   "win_prob": 0.8022,
-   "edge": 0.1168,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Anthony Black: 4+ (finishes with 3 or fewer)",
-   "ticker": "KXNBAAST-26NOV01BOSORL-ORLABLACK0-4",
-   "side": "NO",
-   "price": 0.49,
-   "win_prob": 0.6188,
-   "edge": 0.1113,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Day'Ron Sharpe: 10+ (finishes with 9 or fewer)",
-   "ticker": "KXNBAREB-26NOV01BKNIND-BKNDSHARPE20-10",
-   "side": "NO",
-   "price": 0.69,
-   "win_prob": 0.8094,
-   "edge": 0.1044,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Desmond Bane: 20+ (finishes with 19 or fewer)",
-   "ticker": "KXNBAPTS-26NOV01BOSORL-ORLDBANE3-20",
-   "side": "NO",
-   "price": 0.51,
-   "win_prob": 0.6306,
-   "edge": 0.1031,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Derrick White: 15+ (finishes with 14 or fewer)",
-   "ticker": "KXNBAPTS-26NOV01BOSORL-BOSDWHITE9-15",
-   "side": "NO",
-   "price": 0.55,
-   "win_prob": 0.6687,
-   "edge": 0.1014,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Scottie Barnes: 25+ (finishes with 24 or fewer)",
-   "ticker": "KXNBAPTS-26NOV01TORLAL-TORSBARNES4-25",
-   "side": "NO",
-   "price": 0.57,
-   "win_prob": 0.6997,
-   "edge": 0.1125,
-   "sportsbooks": "disagrees"
   }
  ]
 }
