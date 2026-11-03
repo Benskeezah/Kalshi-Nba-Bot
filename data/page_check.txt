@@ -1,4 +1,4 @@
-size: 13,359 bytes
+size: 13,355 bytes
 sections: ['High-probability picks', 'Value watchlist (practice only)', "What's hitting", 'Track record']
 table rows: [3, 0, 6, 4, 4]
 html problems: none
