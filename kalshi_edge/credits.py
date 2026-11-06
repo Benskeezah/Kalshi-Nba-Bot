@@ -66,7 +66,9 @@ def games_allowed(remaining: Optional[int], wanted: int, now: datetime, *, reser
     if spendable <= 0:
         return 0, f"only {remaining} credits left (keeping {reserve} in reserve)"
     per_run = spendable / runs_left_this_month(now, runs_per_day)
-    allowed = min(wanted, int(per_run // max(per_game, 0.5)))
+    # Allow a game when the per-run budget covers at least 90% of its cost; the
+    # reserve absorbs the small overshoot, so near-misses don't skip the check.
+    allowed = min(wanted, int(per_run / max(per_game, 0.5) + 0.1), int(spendable // max(per_game, 0.5)))
     if allowed < wanted:
         return allowed, (f"{remaining} credits left for {runs_left_this_month(now, runs_per_day)} runs "
                          f"this month at ~{per_game:.0f} per game")

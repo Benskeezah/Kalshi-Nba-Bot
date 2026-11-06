@@ -48,3 +48,11 @@ def test_record_cost(tmp_path, monkeypatch=None):
         assert credits.record_cost(None, "480", 2) is None
     finally:
         del os.environ["KALSHI_EDGE_DB"]
+
+
+def test_credit_guard_near_miss_allows_one_game():
+    from datetime import datetime, timezone
+    from kalshi_edge.credits import games_allowed
+    nov6 = datetime(2026, 11, 6, tzinfo=timezone.utc)      # 25 days x 2 runs = 50 runs left
+    assert games_allowed(419, 2, nov6, reserve=20, runs_per_day=2, per_game=8)[0] == 1
+    assert games_allowed(25, 2, nov6, reserve=20, runs_per_day=2, per_game=8)[0] == 0
