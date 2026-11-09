@@ -1,8 +1,11 @@
   Season 2026: 0 new games to fetch
-  Season 2027: 0 new games to fetch
-Stats: +0 games (latest 2026-11-08T03:00Z).
-Settled 10 earlier predictions.
-957 open prop markets for 2026-11-08.
-Sportsbook check skipped: saving credits (371 credits left for 46 runs this month at ~9 per game).
-Value watchlist: 54 practice pick(s).
-0 pick(s). Report: site/index.html
+  Season 2027: 7 new games to fetch
+Stats: +7 games (latest 2026-11-09T02:00Z).
+Settled 931 earlier predictions.
+1012 open prop markets for 2026-11-09.
+Sportsbook check skipped: saving credits (365 credits left for 44 runs this month at ~9 per game).
+Value watchlist: 55 practice pick(s).
+3 pick(s). Report: site/index.html
+  NO: Sion James: 10+ (finishes with 9 or fewer)  (84%)
+  NO: Coby White: 4+ (finishes with 3 or fewer)  (72%)
+  NO: Coby White: 15+ (finishes with 14 or fewer)  (72%)
