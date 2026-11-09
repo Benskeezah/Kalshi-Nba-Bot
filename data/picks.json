@@ -1,23 +1,73 @@
 {
  "date": "2026-11-09",
- "generated_at": "2026-11-09T17:53:55.345013+00:00",
+ "generated_at": "2026-11-09T22:07:17.840002+00:00",
  "mock": false,
  "log": [
-  "Stats: +7 games (latest 2026-11-09T02:00Z).",
-  "Settled 931 earlier predictions.",
-  "1012 open prop markets for 2026-11-09.",
-  "Sportsbook check skipped: saving credits (365 credits left for 44 runs this month at ~9 per game).",
-  "Value watchlist: 55 practice pick(s)."
+  "Stats: +0 games (latest 2026-11-09T02:00Z).",
+  "Settled 0 earlier predictions.",
+  "1057 open prop markets for 2026-11-09.",
+  "Sportsbook check skipped: saving credits (359 credits left for 44 runs this month at ~9 per game).",
+  "Value watchlist: 57 practice pick(s)."
  ],
  "picks": [
   {
-   "label": "NO: Sion James: 10+ (finishes with 9 or fewer)",
-   "ticker": "KXNBAPTS-26NOV09CLECHA-CHASJAMES4-10",
+   "label": "NO: Ryan Kalkbrenner: 8+ (finishes with 7 or fewer)",
+   "ticker": "KXNBAREB-26NOV09CLECHA-CHARKALKBRENNER11-8",
    "side": "NO",
-   "win_prob": 0.8394,
-   "win_prob_low": 0.7198,
-   "price": 0.698,
-   "breakeven": 0.713,
+   "win_prob": 0.8997,
+   "win_prob_low": 0.7807,
+   "price": 0.69,
+   "breakeven": 0.705,
+   "confidence": "MEDIUM"
+  },
+  {
+   "label": "NO: Ryan Kalkbrenner: 10+ (finishes with 9 or fewer)",
+   "ticker": "KXNBAPTS-26NOV09CLECHA-CHARKALKBRENNER11-10",
+   "side": "NO",
+   "win_prob": 0.8941,
+   "win_prob_low": 0.7721,
+   "price": 0.72,
+   "breakeven": 0.735,
+   "confidence": "MEDIUM"
+  },
+  {
+   "label": "NO: Herbert Jones: 10+ (finishes with 9 or fewer)",
+   "ticker": "KXNBAPTS-26NOV09NOPGSW-NOPHJONES2-10",
+   "side": "NO",
+   "win_prob": 0.8484,
+   "win_prob_low": 0.7204,
+   "price": 0.52,
+   "breakeven": 0.538,
+   "confidence": "MEDIUM"
+  },
+  {
+   "label": "NO: Dejounte Murray: 20+ (finishes with 19 or fewer)",
+   "ticker": "KXNBAPTS-26NOV09NOPGSW-NOPDMURRAY5-20",
+   "side": "NO",
+   "win_prob": 0.8227,
+   "win_prob_low": 0.6504,
+   "price": 0.56,
+   "breakeven": 0.578,
+   "confidence": "MEDIUM"
+  },
+  {
+   "label": "NO: Saddiq Bey: 6+ (finishes with 5 or fewer)",
+   "ticker": "KXNBAREB-26NOV09NOPGSW-NOPSBEY41-6",
+   "side": "NO",
+   "win_prob": 0.7762,
+   "win_prob_low": 0.618,
+   "price": 0.5,
+   "breakeven": 0.518,
+   "confidence": "MEDIUM"
+  },
+  {
+   "label": "NO: Herbert Jones: 4+ (finishes with 3 or fewer)",
+   "ticker": "KXNBAREB-26NOV09NOPGSW-NOPHJONES2-4",
+   "side": "NO",
+   "win_prob": 0.7565,
+   "win_prob_low": 0.607,
+   "price": 0.52,
+   "breakeven": 0.538,
    "confidence": "MEDIUM"
   },
   {
@@ -36,12 +86,40 @@
    "side": "NO",
    "win_prob": 0.7208,
    "win_prob_low": 0.5605,
-   "price": 0.5,
-   "breakeven": 0.518,
+   "price": 0.51,
+   "breakeven": 0.528,
+   "confidence": "MEDIUM"
+  },
+  {
+   "label": "NO: Ryan Kalkbrenner: 6+ (finishes with 5 or fewer)",
+   "ticker": "KXNBAREB-26NOV09CLECHA-CHARKALKBRENNER11-6",
+   "side": "NO",
+   "win_prob": 0.7045,
+   "win_prob_low": 0.542,
+   "price": 0.407,
+   "breakeven": 0.424,
    "confidence": "MEDIUM"
   }
  ],
  "value_watchlist": [
+  {
+   "label": "NO: Herbert Jones: 10+ (finishes with 9 or fewer)",
+   "ticker": "KXNBAPTS-26NOV09NOPGSW-NOPHJONES2-10",
+   "side": "NO",
+   "price": 0.52,
+   "win_prob": 0.8484,
+   "edge": 0.3109,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Saddiq Bey: 6+ (finishes with 5 or fewer)",
+   "ticker": "KXNBAREB-26NOV09NOPGSW-NOPSBEY41-6",
+   "side": "NO",
+   "price": 0.5,
+   "win_prob": 0.7762,
+   "edge": 0.2587,
+   "sportsbooks": "no line"
+  },
   {
    "label": "NO: Cade Cunningham: 20+ (finishes with 19 or fewer)",
    "ticker": "KXNBAPTS-26NOV09WASDET-DETCCUNNINGHAM2-20",
@@ -52,12 +130,30 @@
    "sportsbooks": "no line"
   },
   {
+   "label": "NO: Dejounte Murray: 20+ (finishes with 19 or fewer)",
+   "ticker": "KXNBAPTS-26NOV09NOPGSW-NOPDMURRAY5-20",
+   "side": "NO",
+   "price": 0.56,
+   "win_prob": 0.8227,
+   "edge": 0.2455,
+   "sportsbooks": "no line"
+  },
+  {
    "label": "NO: Cade Cunningham: 25+ (finishes with 24 or fewer)",
    "ticker": "KXNBAPTS-26NOV09WASDET-DETCCUNNINGHAM2-25",
    "side": "NO",
-   "price": 0.45,
+   "price": 0.44,
    "win_prob": 0.694,
-   "edge": 0.2267,
+   "edge": 0.2368,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Herbert Jones: 4+ (finishes with 3 or fewer)",
+   "ticker": "KXNBAREB-26NOV09NOPGSW-NOPHJONES2-4",
+   "side": "NO",
+   "price": 0.52,
+   "win_prob": 0.7565,
+   "edge": 0.2191,
    "sportsbooks": "no line"
   },
   {
@@ -70,48 +166,39 @@
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Naz Reid: 20+ (finishes with 19 or fewer)",
-   "ticker": "KXNBAPTS-26NOV09CLECHA-CHANREID0-20",
+   "label": "NO: Naz Reid: 15+ (finishes with 14 or fewer)",
+   "ticker": "KXNBAPTS-26NOV09CLECHA-CHANREID0-15",
    "side": "NO",
-   "price": 0.52,
-   "win_prob": 0.7548,
-   "edge": 0.2174,
+   "price": 0.3,
+   "win_prob": 0.5265,
+   "edge": 0.2118,
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Cooper Flagg: 6+ (finishes with 5 or fewer)",
-   "ticker": "KXNBAAST-26NOV09INDDAL-DALCFLAGG32-6",
+   "label": "NO: Naz Reid: 20+ (finishes with 19 or fewer)",
+   "ticker": "KXNBAPTS-26NOV09CLECHA-CHANREID0-20",
    "side": "NO",
-   "price": 0.31,
-   "win_prob": 0.542,
-   "edge": 0.217,
+   "price": 0.53,
+   "win_prob": 0.7548,
+   "edge": 0.2074,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Ivica Zubac: 10+ (finishes with 9 or fewer)",
+   "ticker": "KXNBAPTS-26NOV09INDDAL-INDIZUBAC40-10",
+   "side": "NO",
+   "price": 0.38,
+   "win_prob": 0.5899,
+   "edge": 0.1934,
    "sportsbooks": "no line"
   },
   {
    "label": "NO: Coby White: 15+ (finishes with 14 or fewer)",
    "ticker": "KXNBAPTS-26NOV09CLECHA-CHACWHITE3-15",
    "side": "NO",
-   "price": 0.5,
+   "price": 0.51,
    "win_prob": 0.7208,
-   "edge": 0.2033,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Scottie Barnes: 20+ (finishes with 19 or fewer)",
-   "ticker": "KXNBAPTS-26NOV09MEMTOR-TORSBARNES4-20",
-   "side": "NO",
-   "price": 0.32,
-   "win_prob": 0.5372,
-   "edge": 0.202,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Royce O'Neale: 10+ (finishes with 9 or fewer)",
-   "ticker": "KXNBAPTS-26NOV09CLECHA-CHARONEALE00-10",
-   "side": "NO",
-   "price": 0.62,
-   "win_prob": 0.834,
-   "edge": 0.1975,
+   "edge": 0.1933,
    "sportsbooks": "no line"
   },
   {
@@ -124,111 +211,147 @@
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: AJ Dybantsa: 15+ (finishes with 14 or fewer)",
-   "ticker": "KXNBAPTS-26NOV09WASDET-WASADYBANTSA4-15",
+   "label": "NO: Collin Murray-Boyles: 10+ (finishes with 9 or fewer)",
+   "ticker": "KXNBAPTS-26NOV09MEMTOR-TORCMURRAYBOYLES30-10",
    "side": "NO",
-   "price": 0.36,
-   "win_prob": 0.5592,
-   "edge": 0.183,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Grayson Allen: 15+ (finishes with 14 or fewer)",
-   "ticker": "KXNBAPTS-26NOV09CLECHA-CHAGALLEN8-15",
-   "side": "NO",
-   "price": 0.4,
-   "win_prob": 0.5871,
-   "edge": 0.1703,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Cooper Flagg: 25+ (finishes with 24 or fewer)",
-   "ticker": "KXNBAPTS-26NOV09INDDAL-DALCFLAGG32-25",
-   "side": "NO",
-   "price": 0.45,
-   "win_prob": 0.6372,
-   "edge": 0.1699,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Royce O'Neale: 6+ (finishes with 5 or fewer)",
-   "ticker": "KXNBAREB-26NOV09CLECHA-CHARONEALE00-6",
-   "side": "NO",
-   "price": 0.68,
-   "win_prob": 0.8641,
-   "edge": 0.1689,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Cooper Flagg: 20+ (finishes with 19 or fewer)",
-   "ticker": "KXNBAPTS-26NOV09INDDAL-DALCFLAGG32-20",
-   "side": "NO",
-   "price": 0.26,
-   "win_prob": 0.4404,
-   "edge": 0.1669,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Paul Reed: 6+ (finishes with 5 or fewer)",
-   "ticker": "KXNBAREB-26NOV09WASDET-DETPREED7-6",
-   "side": "NO",
-   "price": 0.23,
-   "win_prob": 0.4059,
-   "edge": 0.1635,
+   "price": 0.33,
+   "win_prob": 0.53,
+   "edge": 0.1845,
    "sportsbooks": "no line"
   },
   {
    "label": "NO: Ivica Zubac: 10+ (finishes with 9 or fewer)",
-   "ticker": "KXNBAPTS-26NOV09INDDAL-INDIZUBAC40-10",
+   "ticker": "KXNBAREB-26NOV09INDDAL-INDIZUBAC40-10",
    "side": "NO",
-   "price": 0.41,
-   "win_prob": 0.5899,
-   "edge": 0.1629,
+   "price": 0.51,
+   "win_prob": 0.7049,
+   "edge": 0.1775,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Royce O'Neale: 4+ (finishes with 3 or fewer)",
+   "ticker": "KXNBAREB-26NOV09CLECHA-CHARONEALE00-4",
+   "side": "NO",
+   "price": 0.38,
+   "win_prob": 0.5727,
+   "edge": 0.1762,
    "sportsbooks": "no line"
   },
   {
    "label": "NO: Trae Young: 6+ (finishes with 5 or fewer)",
    "ticker": "KXNBAAST-26NOV09WASDET-WASTYOUNG3-6",
    "side": "NO",
-   "price": 0.16,
+   "price": 0.15,
    "win_prob": 0.3192,
-   "edge": 0.1498,
+   "edge": 0.1603,
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Cooper Flagg: 4+ (finishes with 3 or fewer)",
-   "ticker": "KXNBAAST-26NOV09INDDAL-DALCFLAGG32-4",
+   "label": "NO: Grayson Allen: 15+ (finishes with 14 or fewer)",
+   "ticker": "KXNBAPTS-26NOV09CLECHA-CHAGALLEN8-15",
    "side": "NO",
-   "price": 0.11,
-   "win_prob": 0.2658,
-   "edge": 0.149,
+   "price": 0.41,
+   "win_prob": 0.5871,
+   "edge": 0.1601,
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Trae Young: 8+ (finishes with 7 or fewer)",
-   "ticker": "KXNBAAST-26NOV09WASDET-WASTYOUNG3-8",
+   "label": "NO: Julian Champagnie: 10+ (finishes with 9 or fewer)",
+   "ticker": "KXNBAPTS-26NOV09SASPHX-SASJCHAMPAGNIE30-10",
    "side": "NO",
-   "price": 0.38,
-   "win_prob": 0.5427,
+   "price": 0.41,
+   "win_prob": 0.5864,
+   "edge": 0.1594,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Jeremiah Fears: 15+ (finishes with 14 or fewer)",
+   "ticker": "KXNBAPTS-26NOV09NOPGSW-NOPJFEARS0-15",
+   "side": "NO",
+   "price": 0.36,
+   "win_prob": 0.5354,
+   "edge": 0.1592,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Derik Queen: 10+ (finishes with 9 or fewer)",
+   "ticker": "KXNBAPTS-26NOV09NOPGSW-NOPDQUEEN22-10",
+   "side": "NO",
+   "price": 0.35,
+   "win_prob": 0.5222,
+   "edge": 0.1562,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Grayson Allen: 4+ (finishes with 3 or fewer)",
+   "ticker": "KXNBAAST-26NOV09CLECHA-CHAGALLEN8-4",
+   "side": "NO",
+   "price": 0.49,
+   "win_prob": 0.6623,
+   "edge": 0.1548,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Jakob Poeltl: 10+ (finishes with 9 or fewer)",
+   "ticker": "KXNBAPTS-26NOV09MEMTOR-TORJPOELTL19-10",
+   "side": "NO",
+   "price": 0.44,
+   "win_prob": 0.6113,
+   "edge": 0.154,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Paul Reed: 6+ (finishes with 5 or fewer)",
+   "ticker": "KXNBAREB-26NOV09WASDET-DETPREED7-6",
+   "side": "NO",
+   "price": 0.24,
+   "win_prob": 0.4059,
+   "edge": 0.1531,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Royce O'Neale: 10+ (finishes with 9 or fewer)",
+   "ticker": "KXNBAPTS-26NOV09CLECHA-CHARONEALE00-10",
+   "side": "NO",
+   "price": 0.67,
+   "win_prob": 0.834,
+   "edge": 0.1485,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Cooper Flagg: 20+ (finishes with 19 or fewer)",
+   "ticker": "KXNBAPTS-26NOV09INDDAL-DALCFLAGG32-20",
+   "side": "NO",
+   "price": 0.28,
+   "win_prob": 0.4404,
    "edge": 0.1462,
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Cade Cunningham: 30+ (finishes with 29 or fewer)",
-   "ticker": "KXNBAPTS-26NOV09WASDET-DETCCUNNINGHAM2-30",
+   "label": "NO: Stephen Curry: 20+ (finishes with 19 or fewer)",
+   "ticker": "KXNBAPTS-26NOV09NOPGSW-GSWSCURRY30-20",
    "side": "NO",
-   "price": 0.69,
-   "win_prob": 0.8503,
-   "edge": 0.1453,
+   "price": 0.12,
+   "win_prob": 0.272,
+   "edge": 0.1446,
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: AJ Dybantsa: 20+ (finishes with 19 or fewer)",
-   "ticker": "KXNBAPTS-26NOV09WASDET-WASADYBANTSA4-20",
+   "label": "NO: RJ Barrett: 25+ (finishes with 24 or fewer)",
+   "ticker": "KXNBAPTS-26NOV09MEMTOR-TORRBARRETT9-25",
    "side": "NO",
-   "price": 0.67,
-   "win_prob": 0.8286,
-   "edge": 0.1431,
+   "price": 0.53,
+   "win_prob": 0.6917,
+   "edge": 0.1443,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Ziaire Williams: 4+ (finishes with 3 or fewer)",
+   "ticker": "KXNBAREB-26NOV09LALATL-LALZWILLIAMS11-4",
+   "side": "NO",
+   "price": 0.62,
+   "win_prob": 0.7793,
+   "edge": 0.1428,
    "sportsbooks": "no line"
   },
   {
@@ -241,111 +364,66 @@
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Collin Murray-Boyles: 2+ (finishes with 1 or fewer)",
-   "ticker": "KXNBAAST-26NOV09MEMTOR-TORCMURRAYBOYLES30-2",
+   "label": "NO: Jakob Poeltl: 8+ (finishes with 7 or fewer)",
+   "ticker": "KXNBAREB-26NOV09MEMTOR-TORJPOELTL19-8",
+   "side": "NO",
+   "price": 0.54,
+   "win_prob": 0.6969,
+   "edge": 0.1395,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Ivica Zubac: 6+ (finishes with 5 or fewer)",
+   "ticker": "KXNBAREB-26NOV09INDDAL-INDIZUBAC40-6",
+   "side": "NO",
+   "price": 0.14,
+   "win_prob": 0.2877,
+   "edge": 0.1393,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Cooper Flagg: 6+ (finishes with 5 or fewer)",
+   "ticker": "KXNBAAST-26NOV09INDDAL-DALCFLAGG32-6",
    "side": "NO",
    "price": 0.39,
-   "win_prob": 0.5481,
-   "edge": 0.1415,
+   "win_prob": 0.542,
+   "edge": 0.1353,
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Cameron Boozer: 15+ (finishes with 14 or fewer)",
-   "ticker": "KXNBAPTS-26NOV09MEMTOR-MEMCBOOZER27-15",
+   "label": "NO: AJ Dybantsa: 20+ (finishes with 19 or fewer)",
+   "ticker": "KXNBAPTS-26NOV09WASDET-WASADYBANTSA4-20",
    "side": "NO",
-   "price": 0.37,
-   "win_prob": 0.5277,
-   "edge": 0.1414,
+   "price": 0.68,
+   "win_prob": 0.8286,
+   "edge": 0.1333,
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Cooper Flagg: 8+ (finishes with 7 or fewer)",
-   "ticker": "KXNBAAST-26NOV09INDDAL-DALCFLAGG32-8",
+   "label": "NO: Cooper Flagg: 25+ (finishes with 24 or fewer)",
+   "ticker": "KXNBAPTS-26NOV09INDDAL-DALCFLAGG32-25",
    "side": "NO",
-   "price": 0.62,
-   "win_prob": 0.7762,
-   "edge": 0.1397,
+   "price": 0.49,
+   "win_prob": 0.6372,
+   "edge": 0.1297,
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: John Collins: 6+ (finishes with 5 or fewer)",
-   "ticker": "KXNBAREB-26NOV09WASDET-DETJCOLLINS20-6",
+   "label": "NO: Ausar Thompson: 10+ (finishes with 9 or fewer)",
+   "ticker": "KXNBAPTS-26NOV09WASDET-DETATHOMPSON9-10",
    "side": "NO",
-   "price": 0.44,
-   "win_prob": 0.5969,
-   "edge": 0.1396,
+   "price": 0.45,
+   "win_prob": 0.5968,
+   "edge": 0.1295,
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Ja'Kobe Walter: 10+ (finishes with 9 or fewer)",
-   "ticker": "KXNBAPTS-26NOV09MEMTOR-TORJWALTER14-10",
+   "label": "NO: Trae Young: 15+ (finishes with 14 or fewer)",
+   "ticker": "KXNBAPTS-26NOV09WASDET-WASTYOUNG3-15",
    "side": "NO",
-   "price": 0.35,
-   "win_prob": 0.5031,
-   "edge": 0.1372,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Victor Wembanyama: 25+ (finishes with 24 or fewer)",
-   "ticker": "KXNBAPTS-26NOV09SASPHX-SASVWEMBANYAMA1-25",
-   "side": "NO",
-   "price": 0.34,
-   "win_prob": 0.4928,
-   "edge": 0.1371,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Sion James: 10+ (finishes with 9 or fewer)",
-   "ticker": "KXNBAPTS-26NOV09CLECHA-CHASJAMES4-10",
-   "side": "NO",
-   "price": 0.69,
-   "win_prob": 0.8394,
-   "edge": 0.1344,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Ziaire Williams: 4+ (finishes with 3 or fewer)",
-   "ticker": "KXNBAREB-26NOV09LALATL-LALZWILLIAMS11-4",
-   "side": "NO",
-   "price": 0.63,
-   "win_prob": 0.7793,
-   "edge": 0.1329,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: John Collins: 4+ (finishes with 3 or fewer)",
-   "ticker": "KXNBAREB-26NOV09WASDET-DETJCOLLINS20-4",
-   "side": "NO",
-   "price": 0.19,
-   "win_prob": 0.3309,
-   "edge": 0.1302,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Jakob Poeltl: 6+ (finishes with 5 or fewer)",
-   "ticker": "KXNBAREB-26NOV09MEMTOR-TORJPOELTL19-6",
-   "side": "NO",
-   "price": 0.33,
-   "win_prob": 0.4737,
-   "edge": 0.1282,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Naz Reid: 8+ (finishes with 7 or fewer)",
-   "ticker": "KXNBAREB-26NOV09CLECHA-CHANREID0-8",
-   "side": "NO",
-   "price": 0.42,
-   "win_prob": 0.5644,
-   "edge": 0.1274,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Collin Murray-Boyles: 15+ (finishes with 14 or fewer)",
-   "ticker": "KXNBAPTS-26NOV09MEMTOR-TORCMURRAYBOYLES30-15",
-   "side": "NO",
-   "price": 0.65,
-   "win_prob": 0.7924,
-   "edge": 0.1265,
+   "price": 0.29,
+   "win_prob": 0.4328,
+   "edge": 0.1284,
    "sportsbooks": "no line"
   },
   {
@@ -358,30 +436,12 @@
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Collin Murray-Boyles: 6+ (finishes with 5 or fewer)",
-   "ticker": "KXNBAREB-26NOV09MEMTOR-TORCMURRAYBOYLES30-6",
+   "label": "NO: Coby White: 10+ (finishes with 9 or fewer)",
+   "ticker": "KXNBAPTS-26NOV09CLECHA-CHACWHITE3-10",
    "side": "NO",
-   "price": 0.46,
-   "win_prob": 0.6025,
-   "edge": 0.1252,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Grayson Allen: 4+ (finishes with 3 or fewer)",
-   "ticker": "KXNBAAST-26NOV09CLECHA-CHAGALLEN8-4",
-   "side": "NO",
-   "price": 0.52,
-   "win_prob": 0.6623,
-   "edge": 0.1249,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: RJ Barrett: 25+ (finishes with 24 or fewer)",
-   "ticker": "KXNBAPTS-26NOV09MEMTOR-TORRBARRETT9-25",
-   "side": "NO",
-   "price": 0.55,
-   "win_prob": 0.6917,
-   "edge": 0.1244,
+   "price": 0.24,
+   "win_prob": 0.3781,
+   "edge": 0.1253,
    "sportsbooks": "no line"
   },
   {
@@ -394,147 +454,165 @@
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Cameron Boozer: 20+ (finishes with 19 or fewer)",
-   "ticker": "KXNBAPTS-26NOV09MEMTOR-MEMCBOOZER27-20",
+   "label": "NO: Derik Queen: 8+ (finishes with 7 or fewer)",
+   "ticker": "KXNBAREB-26NOV09NOPGSW-NOPDQUEEN22-8",
    "side": "NO",
-   "price": 0.67,
-   "win_prob": 0.8084,
-   "edge": 0.123,
+   "price": 0.55,
+   "win_prob": 0.6902,
+   "edge": 0.1229,
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Paul Reed: 10+ (finishes with 9 or fewer)",
-   "ticker": "KXNBAPTS-26NOV09WASDET-DETPREED7-10",
+   "label": "NO: Karlo Matkovi\u0107: 10+ (finishes with 9 or fewer)",
+   "ticker": "KXNBAPTS-26NOV09NOPGSW-NOPKMATKOVIC17-10",
+   "side": "NO",
+   "price": 0.58,
+   "win_prob": 0.7198,
+   "edge": 0.1228,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Jeremiah Fears: 4+ (finishes with 3 or fewer)",
+   "ticker": "KXNBAAST-26NOV09NOPGSW-NOPJFEARS0-4",
    "side": "NO",
    "price": 0.33,
-   "win_prob": 0.4618,
+   "win_prob": 0.4674,
+   "edge": 0.1219,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: John Collins: 6+ (finishes with 5 or fewer)",
+   "ticker": "KXNBAREB-26NOV09WASDET-DETJCOLLINS20-6",
+   "side": "NO",
+   "price": 0.46,
+   "win_prob": 0.5969,
+   "edge": 0.1195,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Cooper Flagg: 4+ (finishes with 3 or fewer)",
+   "ticker": "KXNBAAST-26NOV09INDDAL-DALCFLAGG32-4",
+   "side": "NO",
+   "price": 0.14,
+   "win_prob": 0.2658,
+   "edge": 0.1174,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Julian Champagnie: 6+ (finishes with 5 or fewer)",
+   "ticker": "KXNBAREB-26NOV09SASPHX-SASJCHAMPAGNIE30-6",
+   "side": "NO",
+   "price": 0.56,
+   "win_prob": 0.6937,
    "edge": 0.1164,
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Nikola Joki\u0107: 25+ (finishes with 24 or fewer)",
-   "ticker": "KXNBAPTS-26NOV09DENHOU-DENNJOKIC15-25",
+   "label": "NO: Sion James: 4+ (finishes with 3 or fewer)",
+   "ticker": "KXNBAAST-26NOV09CLECHA-CHASJAMES4-4",
    "side": "NO",
-   "price": 0.47,
-   "win_prob": 0.6033,
-   "edge": 0.1159,
+   "price": 0.65,
+   "win_prob": 0.7814,
+   "edge": 0.1155,
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Grayson Allen: 20+ (finishes with 19 or fewer)",
-   "ticker": "KXNBAPTS-26NOV09CLECHA-CHAGALLEN8-20",
+   "label": "NO: Stephon Castle: 15+ (finishes with 14 or fewer)",
+   "ticker": "KXNBAPTS-26NOV09SASPHX-SASSCASTLE5-15",
    "side": "NO",
-   "price": 0.68,
-   "win_prob": 0.8095,
+   "price": 0.41,
+   "win_prob": 0.5412,
    "edge": 0.1143,
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Stephen Curry: 25+ (finishes with 24 or fewer)",
-   "ticker": "KXNBAPTS-26NOV09NOPGSW-GSWSCURRY30-25",
+   "label": "NO: Scottie Barnes: 25+ (finishes with 24 or fewer)",
+   "ticker": "KXNBAPTS-26NOV09MEMTOR-TORSBARNES4-25",
    "side": "NO",
-   "price": 0.29,
-   "win_prob": 0.4184,
-   "edge": 0.114,
+   "price": 0.63,
+   "win_prob": 0.7556,
+   "edge": 0.1093,
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Dejounte Murray: 15+ (finishes with 14 or fewer)",
-   "ticker": "KXNBAPTS-26NOV09NOPGSW-NOPDMURRAY5-15",
+   "label": "NO: Naz Reid: 8+ (finishes with 7 or fewer)",
+   "ticker": "KXNBAREB-26NOV09CLECHA-CHANREID0-8",
    "side": "NO",
    "price": 0.44,
-   "win_prob": 0.5706,
-   "edge": 0.1133,
+   "win_prob": 0.5644,
+   "edge": 0.1072,
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Austin Reaves: 4+ (finishes with 3 or fewer)",
-   "ticker": "KXNBAAST-26NOV09LALATL-LALAREAVES15-4",
-   "side": "NO",
-   "price": 0.27,
-   "win_prob": 0.395,
-   "edge": 0.1112,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Ivica Zubac: 10+ (finishes with 9 or fewer)",
-   "ticker": "KXNBAREB-26NOV09INDDAL-INDIZUBAC40-10",
-   "side": "NO",
-   "price": 0.58,
-   "win_prob": 0.7049,
-   "edge": 0.1079,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Nikola Joki\u0107: 20+ (finishes with 19 or fewer)",
-   "ticker": "KXNBAPTS-26NOV09DENHOU-DENNJOKIC15-20",
-   "side": "NO",
-   "price": 0.24,
-   "win_prob": 0.3598,
-   "edge": 0.1071,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Dylan Harper: 6+ (finishes with 5 or fewer)",
-   "ticker": "KXNBAREB-26NOV09SASPHX-SASDHARPER2-6",
-   "side": "NO",
-   "price": 0.55,
-   "win_prob": 0.6739,
-   "edge": 0.1066,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Evan Mobley: 8+ (finishes with 7 or fewer)",
-   "ticker": "KXNBAREB-26NOV09CLECHA-CLEEMOBLEY4-8",
-   "side": "NO",
-   "price": 0.38,
-   "win_prob": 0.5007,
-   "edge": 0.1042,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Aaron Nesmith: 2+ (finishes with 1 or fewer)",
-   "ticker": "KXNBAREB-26NOV09INDDAL-INDANESMITH23-2",
-   "side": "NO",
-   "price": 0.17,
-   "win_prob": 0.2839,
-   "edge": 0.104,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Jakob Poeltl: 10+ (finishes with 9 or fewer)",
-   "ticker": "KXNBAPTS-26NOV09MEMTOR-TORJPOELTL19-10",
-   "side": "NO",
-   "price": 0.49,
-   "win_prob": 0.6113,
-   "edge": 0.1038,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "YES: Dillon Brooks: 20+",
-   "ticker": "KXNBAPTS-26NOV09SASPHX-PHXDBROOKS3-20",
+   "label": "YES: Fred VanVleet: 6+",
+   "ticker": "KXNBAAST-26NOV09DENHOU-HOUFVANVLEET5-6",
    "side": "YES",
-   "price": 0.25,
-   "win_prob": 0.3665,
-   "edge": 0.1034,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "YES: Dillon Brooks: 15+",
-   "ticker": "KXNBAPTS-26NOV09SASPHX-PHXDBROOKS3-15",
-   "side": "YES",
-   "price": 0.52,
-   "win_prob": 0.6397,
-   "edge": 0.1022,
+   "price": 0.41,
+   "win_prob": 0.5326,
+   "edge": 0.1056,
    "sportsbooks": "no line"
   },
   {
    "label": "YES: Fred VanVleet: 8+",
    "ticker": "KXNBAAST-26NOV09DENHOU-HOUFVANVLEET5-8",
    "side": "YES",
-   "price": 0.15,
-   "win_prob": 0.2591,
-   "edge": 0.1002,
+   "price": 0.16,
+   "win_prob": 0.275,
+   "edge": 0.1056,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "YES: Obi Toppin: 4+",
+   "ticker": "KXNBAREB-26NOV09INDDAL-INDOTOPPIN1-4",
+   "side": "YES",
+   "price": 0.6,
+   "win_prob": 0.7224,
+   "edge": 0.1056,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Luka Don\u010di\u0107: 6+ (finishes with 5 or fewer)",
+   "ticker": "KXNBAAST-26NOV09LALATL-LALLDONCIC77-6",
+   "side": "NO",
+   "price": 0.16,
+   "win_prob": 0.2725,
+   "edge": 0.1031,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Ausar Thompson: 6+ (finishes with 5 or fewer)",
+   "ticker": "KXNBAREB-26NOV09WASDET-DETATHOMPSON9-6",
+   "side": "NO",
+   "price": 0.28,
+   "win_prob": 0.3967,
+   "edge": 0.1026,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Stephen Curry: 25+ (finishes with 24 or fewer)",
+   "ticker": "KXNBAPTS-26NOV09NOPGSW-GSWSCURRY30-25",
+   "side": "NO",
+   "price": 0.33,
+   "win_prob": 0.4478,
+   "edge": 0.1023,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Paul Reed: 10+ (finishes with 9 or fewer)",
+   "ticker": "KXNBAREB-26NOV09WASDET-DETPREED7-10",
+   "side": "NO",
+   "price": 0.67,
+   "win_prob": 0.7867,
+   "edge": 0.1012,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Jalen Green: 4+ (finishes with 3 or fewer)",
+   "ticker": "KXNBAREB-26NOV09SASPHX-PHXJGREEN4-4",
+   "side": "NO",
+   "price": 0.47,
+   "win_prob": 0.5875,
+   "edge": 0.1,
    "sportsbooks": "no line"
   }
  ]
