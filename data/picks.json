@@ -1,23 +1,83 @@
 {
  "date": "2026-11-10",
- "generated_at": "2026-11-10T17:44:44.188517+00:00",
+ "generated_at": "2026-11-10T22:02:39.900399+00:00",
  "mock": false,
  "log": [
-  "Stats: +8 games (latest 2026-11-10T03:00Z).",
-  "Settled 987 earlier predictions.",
-  "820 open prop markets for 2026-11-10.",
-  "Sportsbook check for 1 game(s) (ORL/SAC): 317 prop lines found; Odds API credits left: 344 (9 per game this run). Limited: 353 credits left for 42 runs this month at ~9 per game.",
-  "Value watchlist: 48 practice pick(s)."
+  "Stats: +0 games (latest 2026-11-10T03:00Z).",
+  "Settled 0 earlier predictions.",
+  "845 open prop markets for 2026-11-10.",
+  "Sportsbook check skipped: saving credits (338 credits left for 42 runs this month at ~9 per game).",
+  "Value watchlist: 73 practice pick(s)."
  ],
  "picks": [
+  {
+   "label": "NO: Isaiah Collier: 15+ (finishes with 14 or fewer)",
+   "ticker": "KXNBAPTS-26NOV10MIAUTA-UTAICOLLIER8-15",
+   "side": "NO",
+   "win_prob": 0.9186,
+   "win_prob_low": 0.8055,
+   "price": 0.745,
+   "breakeven": 0.759,
+   "confidence": "MEDIUM"
+  },
   {
    "label": "NO: Isaiah Collier: 8+ (finishes with 7 or fewer)",
    "ticker": "KXNBAAST-26NOV10MIAUTA-UTAICOLLIER8-8",
    "side": "NO",
    "win_prob": 0.8729,
    "win_prob_low": 0.7502,
-   "price": 0.64,
-   "breakeven": 0.657,
+   "price": 0.65,
+   "breakeven": 0.666,
+   "confidence": "MEDIUM"
+  },
+  {
+   "label": "NO: Jase Richardson: 4+ (finishes with 3 or fewer)",
+   "ticker": "KXNBAREB-26NOV10ORLSAC-ORLJRICHARDSON11-4",
+   "side": "NO",
+   "win_prob": 0.8268,
+   "win_prob_low": 0.6985,
+   "price": 0.68,
+   "breakeven": 0.696,
+   "confidence": "MEDIUM"
+  },
+  {
+   "label": "NO: Brice Sensabaugh: 15+ (finishes with 14 or fewer)",
+   "ticker": "KXNBAPTS-26NOV10MIAUTA-UTABSENSABAUGH28-15",
+   "side": "NO",
+   "win_prob": 0.7938,
+   "win_prob_low": 0.6782,
+   "price": 0.62,
+   "breakeven": 0.637,
+   "confidence": "MEDIUM"
+  },
+  {
+   "label": "NO: Jase Richardson: 10+ (finishes with 9 or fewer)",
+   "ticker": "KXNBAPTS-26NOV10ORLSAC-ORLJRICHARDSON11-10",
+   "side": "NO",
+   "win_prob": 0.7949,
+   "win_prob_low": 0.6716,
+   "price": 0.54,
+   "breakeven": 0.558,
+   "confidence": "MEDIUM"
+  },
+  {
+   "label": "NO: Brice Sensabaugh: 4+ (finishes with 3 or fewer)",
+   "ticker": "KXNBAREB-26NOV10MIAUTA-UTABSENSABAUGH28-4",
+   "side": "NO",
+   "win_prob": 0.7902,
+   "win_prob_low": 0.6546,
+   "price": 0.613,
+   "breakeven": 0.63,
+   "confidence": "MEDIUM"
+  },
+  {
+   "label": "NO: Anthony Black: 6+ (finishes with 5 or fewer)",
+   "ticker": "KXNBAAST-26NOV10ORLSAC-ORLABLACK0-6",
+   "side": "NO",
+   "win_prob": 0.7997,
+   "win_prob_low": 0.6427,
+   "price": 0.6,
+   "breakeven": 0.617,
    "confidence": "MEDIUM"
   },
   {
@@ -26,8 +86,8 @@
    "side": "NO",
    "win_prob": 0.7119,
    "win_prob_low": 0.5783,
-   "price": 0.5,
-   "breakeven": 0.518,
+   "price": 0.4226,
+   "breakeven": 0.4406,
    "confidence": "MEDIUM"
   },
   {
@@ -36,82 +96,163 @@
    "side": "NO",
    "win_prob": 0.7004,
    "win_prob_low": 0.5551,
-   "price": 0.381,
-   "breakeven": 0.398,
+   "price": 0.376,
+   "breakeven": 0.393,
    "confidence": "MEDIUM"
   }
  ],
  "value_watchlist": [
   {
-   "label": "NO: Franz Wagner: 6+ (finishes with 5 or fewer)",
-   "ticker": "KXNBAAST-26NOV10ORLSAC-ORLFWAGNER22-6",
+   "label": "NO: Josh Green: 2+ (finishes with 1 or fewer)",
+   "ticker": "KXNBAAST-26NOV10MIAUTA-UTAJGREEN5-2",
    "side": "NO",
-   "price": 0.19,
-   "win_prob": 0.3933,
-   "edge": 0.1925,
-   "sportsbooks": "agrees"
-  },
-  {
-   "label": "NO: Franz Wagner: 4+ (finishes with 3 or fewer)",
-   "ticker": "KXNBAAST-26NOV10ORLSAC-ORLFWAGNER22-4",
-   "side": "NO",
-   "price": 0.09,
-   "win_prob": 0.2165,
-   "edge": 0.1207,
-   "sportsbooks": "agrees"
+   "price": 0.49,
+   "win_prob": 0.8235,
+   "edge": 0.316,
+   "sportsbooks": "no line"
   },
   {
    "label": "NO: Isaiah Collier: 6+ (finishes with 5 or fewer)",
    "ticker": "KXNBAAST-26NOV10MIAUTA-UTAICOLLIER8-6",
    "side": "NO",
-   "price": 0.38,
+   "price": 0.37,
    "win_prob": 0.7004,
-   "edge": 0.3039,
+   "edge": 0.3141,
    "sportsbooks": "no line"
   },
   {
    "label": "NO: Darryn Peterson: 20+ (finishes with 19 or fewer)",
    "ticker": "KXNBAPTS-26NOV10MIAUTA-UTADPETERSON22-20",
    "side": "NO",
-   "price": 0.54,
-   "win_prob": 0.7946,
-   "edge": 0.2372,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Rui Hachimura: 15+ (finishes with 14 or fewer)",
-   "ticker": "KXNBAPTS-26NOV10LACPHX-LACRHACHIMURA28-15",
-   "side": "NO",
-   "price": 0.43,
-   "win_prob": 0.6721,
-   "edge": 0.2249,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Isaiah Collier: 8+ (finishes with 7 or fewer)",
-   "ticker": "KXNBAAST-26NOV10MIAUTA-UTAICOLLIER8-8",
-   "side": "NO",
-   "price": 0.64,
-   "win_prob": 0.8729,
-   "edge": 0.2168,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Darryn Peterson: 15+ (finishes with 14 or fewer)",
-   "ticker": "KXNBAPTS-26NOV10MIAUTA-UTADPETERSON22-15",
-   "side": "NO",
-   "price": 0.3,
-   "win_prob": 0.5102,
-   "edge": 0.1955,
+   "price": 0.48,
+   "win_prob": 0.7995,
+   "edge": 0.302,
    "sportsbooks": "no line"
   },
   {
    "label": "NO: Isaiah Collier: 10+ (finishes with 9 or fewer)",
    "ticker": "KXNBAPTS-26NOV10MIAUTA-UTAICOLLIER8-10",
    "side": "NO",
-   "price": 0.5,
+   "price": 0.41,
    "win_prob": 0.7119,
-   "edge": 0.1944,
+   "edge": 0.285,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Darryn Peterson: 15+ (finishes with 14 or fewer)",
+   "ticker": "KXNBAPTS-26NOV10MIAUTA-UTADPETERSON22-15",
+   "side": "NO",
+   "price": 0.23,
+   "win_prob": 0.5163,
+   "edge": 0.2739,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Franz Wagner: 6+ (finishes with 5 or fewer)",
+   "ticker": "KXNBAAST-26NOV10ORLSAC-ORLFWAGNER22-6",
+   "side": "NO",
+   "price": 0.24,
+   "win_prob": 0.4986,
+   "edge": 0.2458,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Jase Richardson: 10+ (finishes with 9 or fewer)",
+   "ticker": "KXNBAPTS-26NOV10ORLSAC-ORLJRICHARDSON11-10",
+   "side": "NO",
+   "price": 0.54,
+   "win_prob": 0.7949,
+   "edge": 0.2376,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Rui Hachimura: 15+ (finishes with 14 or fewer)",
+   "ticker": "KXNBAPTS-26NOV10LACPHX-LACRHACHIMURA28-15",
+   "side": "NO",
+   "price": 0.42,
+   "win_prob": 0.6721,
+   "edge": 0.235,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Jase Richardson: 2+ (finishes with 1 or fewer)",
+   "ticker": "KXNBAREB-26NOV10ORLSAC-ORLJRICHARDSON11-2",
+   "side": "NO",
+   "price": 0.25,
+   "win_prob": 0.4933,
+   "edge": 0.2302,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Josh Green: 10+ (finishes with 9 or fewer)",
+   "ticker": "KXNBAPTS-26NOV10MIAUTA-UTAJGREEN5-10",
+   "side": "NO",
+   "price": 0.69,
+   "win_prob": 0.9318,
+   "edge": 0.2269,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Isaiah Collier: 8+ (finishes with 7 or fewer)",
+   "ticker": "KXNBAAST-26NOV10MIAUTA-UTAICOLLIER8-8",
+   "side": "NO",
+   "price": 0.65,
+   "win_prob": 0.8729,
+   "edge": 0.207,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Darryn Peterson: 6+ (finishes with 5 or fewer)",
+   "ticker": "KXNBAAST-26NOV10MIAUTA-UTADPETERSON22-6",
+   "side": "NO",
+   "price": 0.55,
+   "win_prob": 0.7736,
+   "edge": 0.2063,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Franz Wagner: 8+ (finishes with 7 or fewer)",
+   "ticker": "KXNBAAST-26NOV10ORLSAC-ORLFWAGNER22-8",
+   "side": "NO",
+   "price": 0.45,
+   "win_prob": 0.6724,
+   "edge": 0.2051,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Brice Sensabaugh: 10+ (finishes with 9 or fewer)",
+   "ticker": "KXNBAPTS-26NOV10MIAUTA-UTABSENSABAUGH28-10",
+   "side": "NO",
+   "price": 0.33,
+   "win_prob": 0.5503,
+   "edge": 0.2048,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "YES: Anfernee Simons: 10+",
+   "ticker": "KXNBAPTS-26NOV10BOSPHI-PHIASIMONS5-10",
+   "side": "YES",
+   "price": 0.25,
+   "win_prob": 0.4623,
+   "edge": 0.1992,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Franz Wagner: 4+ (finishes with 3 or fewer)",
+   "ticker": "KXNBAAST-26NOV10ORLSAC-ORLFWAGNER22-4",
+   "side": "NO",
+   "price": 0.09,
+   "win_prob": 0.2919,
+   "edge": 0.1962,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Shai Gilgeous-Alexander: 30+ (finishes with 29 or fewer)",
+   "ticker": "KXNBAPTS-26NOV10OKCPOR-OKCSGILGEOUSALEXANDER2-30",
+   "side": "NO",
+   "price": 0.36,
+   "win_prob": 0.5638,
+   "edge": 0.1877,
    "sportsbooks": "no line"
   },
   {
@@ -124,39 +265,30 @@
    "sportsbooks": "no line"
   },
   {
+   "label": "NO: Anthony Black: 6+ (finishes with 5 or fewer)",
+   "ticker": "KXNBAAST-26NOV10ORLSAC-ORLABLACK0-6",
+   "side": "NO",
+   "price": 0.6,
+   "win_prob": 0.7997,
+   "edge": 0.1829,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Shai Gilgeous-Alexander: 35+ (finishes with 34 or fewer)",
+   "ticker": "KXNBAPTS-26NOV10OKCPOR-OKCSGILGEOUSALEXANDER2-35",
+   "side": "NO",
+   "price": 0.59,
+   "win_prob": 0.7886,
+   "edge": 0.1816,
+   "sportsbooks": "no line"
+  },
+  {
    "label": "NO: Brayden Burries: 4+ (finishes with 3 or fewer)",
    "ticker": "KXNBAAST-26NOV10MILNYK-MILBBURRIES0-4",
    "side": "NO",
-   "price": 0.59,
+   "price": 0.6,
    "win_prob": 0.7937,
-   "edge": 0.1868,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Darryn Peterson: 6+ (finishes with 5 or fewer)",
-   "ticker": "KXNBAAST-26NOV10MIAUTA-UTADPETERSON22-6",
-   "side": "NO",
-   "price": 0.57,
-   "win_prob": 0.77,
-   "edge": 0.1828,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Shai Gilgeous-Alexander: 30+ (finishes with 29 or fewer)",
-   "ticker": "KXNBAPTS-26NOV10OKCPOR-OKCSGILGEOUSALEXANDER2-30",
-   "side": "NO",
-   "price": 0.37,
-   "win_prob": 0.5638,
-   "edge": 0.1775,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Mikal Bridges: 10+ (finishes with 9 or fewer)",
-   "ticker": "KXNBAPTS-26NOV10MILNYK-NYKMBRIDGES25-10",
-   "side": "NO",
-   "price": 0.42,
-   "win_prob": 0.6098,
-   "edge": 0.1727,
+   "edge": 0.1769,
    "sportsbooks": "no line"
   },
   {
@@ -169,21 +301,57 @@
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Myles Turner: 10+ (finishes with 9 or fewer)",
-   "ticker": "KXNBAPTS-26NOV10MILNYK-MILMTURNER3-10",
+   "label": "NO: Mikal Bridges: 10+ (finishes with 9 or fewer)",
+   "ticker": "KXNBAPTS-26NOV10MILNYK-NYKMBRIDGES25-10",
    "side": "NO",
-   "price": 0.5,
-   "win_prob": 0.6714,
-   "edge": 0.1539,
+   "price": 0.43,
+   "win_prob": 0.6098,
+   "edge": 0.1626,
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Shai Gilgeous-Alexander: 35+ (finishes with 34 or fewer)",
-   "ticker": "KXNBAPTS-26NOV10OKCPOR-OKCSGILGEOUSALEXANDER2-35",
+   "label": "NO: Rui Hachimura: 4+ (finishes with 3 or fewer)",
+   "ticker": "KXNBAREB-26NOV10LACPHX-LACRHACHIMURA28-4",
+   "side": "NO",
+   "price": 0.28,
+   "win_prob": 0.4519,
+   "edge": 0.1578,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Brice Sensabaugh: 15+ (finishes with 14 or fewer)",
+   "ticker": "KXNBAPTS-26NOV10MIAUTA-UTABSENSABAUGH28-15",
    "side": "NO",
    "price": 0.62,
-   "win_prob": 0.7886,
-   "edge": 0.1521,
+   "win_prob": 0.7938,
+   "edge": 0.1573,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Ace Bailey: 15+ (finishes with 14 or fewer)",
+   "ticker": "KXNBAPTS-26NOV10MIAUTA-UTAABAILEY19-15",
+   "side": "NO",
+   "price": 0.41,
+   "win_prob": 0.5823,
+   "edge": 0.1553,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Ace Bailey: 10+ (finishes with 9 or fewer)",
+   "ticker": "KXNBAPTS-26NOV10MIAUTA-UTAABAILEY19-10",
+   "side": "NO",
+   "price": 0.14,
+   "win_prob": 0.3029,
+   "edge": 0.1545,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Brayden Burries: 15+ (finishes with 14 or fewer)",
+   "ticker": "KXNBAPTS-26NOV10MILNYK-MILBBURRIES0-15",
+   "side": "NO",
+   "price": 0.64,
+   "win_prob": 0.8091,
+   "edge": 0.1529,
    "sportsbooks": "no line"
   },
   {
@@ -196,120 +364,201 @@
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Rui Hachimura: 4+ (finishes with 3 or fewer)",
-   "ticker": "KXNBAREB-26NOV10LACPHX-LACRHACHIMURA28-4",
+   "label": "NO: Shai Gilgeous-Alexander: 25+ (finishes with 24 or fewer)",
+   "ticker": "KXNBAPTS-26NOV10OKCPOR-OKCSGILGEOUSALEXANDER2-25",
    "side": "NO",
-   "price": 0.29,
-   "win_prob": 0.4519,
-   "edge": 0.1475,
+   "price": 0.15,
+   "win_prob": 0.3102,
+   "edge": 0.1512,
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Brayden Burries: 15+ (finishes with 14 or fewer)",
-   "ticker": "KXNBAPTS-26NOV10MILNYK-MILBBURRIES0-15",
+   "label": "NO: Jamal Cain: 4+ (finishes with 3 or fewer)",
+   "ticker": "KXNBAREB-26NOV10ORLSAC-ORLJCAIN8-4",
    "side": "NO",
-   "price": 0.65,
-   "win_prob": 0.8091,
-   "edge": 0.1431,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Isaiah Hartenstein: 2+ (finishes with 1 or fewer)",
-   "ticker": "KXNBAAST-26NOV10OKCPOR-OKCIHARTENSTEIN55-2",
-   "side": "NO",
-   "price": 0.13,
-   "win_prob": 0.2755,
-   "edge": 0.1375,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "YES: Anfernee Simons: 10+",
-   "ticker": "KXNBAPTS-26NOV10BOSPHI-PHIASIMONS5-10",
-   "side": "YES",
-   "price": 0.31,
-   "win_prob": 0.4623,
-   "edge": 0.1373,
+   "price": 0.44,
+   "win_prob": 0.6076,
+   "edge": 0.1503,
    "sportsbooks": "no line"
   },
   {
    "label": "NO: Isaiah Hartenstein: 4+ (finishes with 3 or fewer)",
    "ticker": "KXNBAAST-26NOV10OKCPOR-OKCIHARTENSTEIN55-4",
    "side": "NO",
-   "price": 0.47,
+   "price": 0.45,
    "win_prob": 0.6155,
-   "edge": 0.128,
+   "edge": 0.1481,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "YES: Precious Achiuwa: 10+",
+   "ticker": "KXNBAPTS-26NOV10ORLSAC-SACPACHIUWA9-10",
+   "side": "YES",
+   "price": 0.35,
+   "win_prob": 0.5131,
+   "edge": 0.1472,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Myles Turner: 10+ (finishes with 9 or fewer)",
+   "ticker": "KXNBAPTS-26NOV10MILNYK-MILMTURNER3-10",
+   "side": "NO",
+   "price": 0.51,
+   "win_prob": 0.6714,
+   "edge": 0.1439,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Franz Wagner: 25+ (finishes with 24 or fewer)",
+   "ticker": "KXNBAPTS-26NOV10ORLSAC-ORLFWAGNER22-25",
+   "side": "NO",
+   "price": 0.54,
+   "win_prob": 0.6992,
+   "edge": 0.1419,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Jase Richardson: 4+ (finishes with 3 or fewer)",
+   "ticker": "KXNBAAST-26NOV10ORLSAC-ORLJRICHARDSON11-4",
+   "side": "NO",
+   "price": 0.62,
+   "win_prob": 0.776,
+   "edge": 0.1396,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Jalen Green: 4+ (finishes with 3 or fewer)",
+   "ticker": "KXNBAREB-26NOV10LACPHX-PHXJGREEN4-4",
+   "side": "NO",
+   "price": 0.44,
+   "win_prob": 0.5921,
+   "edge": 0.1349,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Anthony Black: 4+ (finishes with 3 or fewer)",
+   "ticker": "KXNBAREB-26NOV10ORLSAC-ORLABLACK0-4",
+   "side": "NO",
+   "price": 0.32,
+   "win_prob": 0.4701,
+   "edge": 0.1349,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Anthony Black: 15+ (finishes with 14 or fewer)",
+   "ticker": "KXNBAPTS-26NOV10ORLSAC-ORLABLACK0-15",
+   "side": "NO",
+   "price": 0.43,
+   "win_prob": 0.5813,
+   "edge": 0.1341,
    "sportsbooks": "no line"
   },
   {
    "label": "NO: Jalen Brunson: 25+ (finishes with 24 or fewer)",
    "ticker": "KXNBAPTS-26NOV10MILNYK-NYKJBRUNSON11-25",
    "side": "NO",
-   "price": 0.43,
+   "price": 0.42,
    "win_prob": 0.5711,
-   "edge": 0.124,
+   "edge": 0.1341,
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Giannis Antetokounmpo: 10+ (finishes with 9 or fewer)",
-   "ticker": "KXNBAREB-26NOV10MIAUTA-MIAGANTETOKOUNMPO7-10",
+   "label": "NO: Jaxson Hayes: 8+ (finishes with 7 or fewer)",
+   "ticker": "KXNBAREB-26NOV10MIAUTA-UTAJHAYES11-8",
    "side": "NO",
-   "price": 0.25,
-   "win_prob": 0.3856,
-   "edge": 0.1225,
+   "price": 0.61,
+   "win_prob": 0.7596,
+   "edge": 0.133,
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Khaman Maluach: 6+ (finishes with 5 or fewer)",
-   "ticker": "KXNBAREB-26NOV10LACPHX-PHXKMALUACH10-6",
+   "label": "NO: Jase Richardson: 4+ (finishes with 3 or fewer)",
+   "ticker": "KXNBAREB-26NOV10ORLSAC-ORLJRICHARDSON11-4",
+   "side": "NO",
+   "price": 0.68,
+   "win_prob": 0.8268,
+   "edge": 0.1316,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Jaxson Hayes: 6+ (finishes with 5 or fewer)",
+   "ticker": "KXNBAREB-26NOV10MIAUTA-UTAJHAYES11-6",
+   "side": "NO",
+   "price": 0.36,
+   "win_prob": 0.5062,
+   "edge": 0.13,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Ajay Mitchell: 4+ (finishes with 3 or fewer)",
+   "ticker": "KXNBAAST-26NOV10OKCPOR-OKCAMITCHELL25-4",
+   "side": "NO",
+   "price": 0.45,
+   "win_prob": 0.5894,
+   "edge": 0.1221,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "YES: Precious Achiuwa: 8+",
+   "ticker": "KXNBAREB-26NOV10ORLSAC-SACPACHIUWA9-8",
+   "side": "YES",
+   "price": 0.28,
+   "win_prob": 0.4155,
+   "edge": 0.1214,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Jayson Tatum: 25+ (finishes with 24 or fewer)",
+   "ticker": "KXNBAPTS-26NOV10BOSPHI-BOSJTATUM0-25",
+   "side": "NO",
+   "price": 0.39,
+   "win_prob": 0.5277,
+   "edge": 0.121,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Giannis Antetokounmpo: 12+ (finishes with 11 or fewer)",
+   "ticker": "KXNBAREB-26NOV10MIAUTA-MIAGANTETOKOUNMPO7-12",
    "side": "NO",
    "price": 0.42,
-   "win_prob": 0.5594,
-   "edge": 0.1223,
+   "win_prob": 0.558,
+   "edge": 0.1209,
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Klay Thompson: 2+ (finishes with 1 or fewer)",
-   "ticker": "KXNBAREB-26NOV10MIAUTA-MIAKTHOMPSON11-2",
+   "label": "NO: Anthony Black: 6+ (finishes with 5 or fewer)",
+   "ticker": "KXNBAREB-26NOV10ORLSAC-ORLABLACK0-6",
    "side": "NO",
-   "price": 0.38,
-   "win_prob": 0.5185,
-   "edge": 0.122,
+   "price": 0.63,
+   "win_prob": 0.7664,
+   "edge": 0.1201,
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Jalen Green: 15+ (finishes with 14 or fewer)",
-   "ticker": "KXNBAPTS-26NOV10LACPHX-PHXJGREEN4-15",
+   "label": "NO: Josh Okogie: 2+ (finishes with 1 or fewer)",
+   "ticker": "KXNBAAST-26NOV10MIAUTA-UTAJOKOGIE21-2",
    "side": "NO",
-   "price": 0.44,
-   "win_prob": 0.579,
-   "edge": 0.1218,
+   "price": 0.61,
+   "win_prob": 0.7459,
+   "edge": 0.1193,
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Giannis Antetokounmpo: 30+ (finishes with 29 or fewer)",
-   "ticker": "KXNBAPTS-26NOV10MIAUTA-MIAGANTETOKOUNMPO7-30",
+   "label": "NO: Jayson Tatum: 30+ (finishes with 29 or fewer)",
+   "ticker": "KXNBAPTS-26NOV10BOSPHI-BOSJTATUM0-30",
    "side": "NO",
-   "price": 0.49,
-   "win_prob": 0.628,
-   "edge": 0.1205,
+   "price": 0.63,
+   "win_prob": 0.7655,
+   "edge": 0.1192,
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Shai Gilgeous-Alexander: 25+ (finishes with 24 or fewer)",
-   "ticker": "KXNBAPTS-26NOV10OKCPOR-OKCSGILGEOUSALEXANDER2-25",
+   "label": "NO: Ace Bailey: 20+ (finishes with 19 or fewer)",
+   "ticker": "KXNBAPTS-26NOV10MIAUTA-UTAABAILEY19-20",
    "side": "NO",
-   "price": 0.18,
-   "win_prob": 0.3102,
-   "edge": 0.1198,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Brook Lopez: 4+ (finishes with 3 or fewer)",
-   "ticker": "KXNBAREB-26NOV10LACPHX-LACBLOPEZ11-4",
-   "side": "NO",
-   "price": 0.26,
-   "win_prob": 0.392,
-   "edge": 0.1186,
+   "price": 0.66,
+   "win_prob": 0.7942,
+   "edge": 0.1185,
    "sportsbooks": "no line"
   },
   {
@@ -322,75 +571,66 @@
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Aday Mara: 8+ (finishes with 7 or fewer)",
-   "ticker": "KXNBAREB-26NOV10OKCPOR-OKCAMARA15-8",
+   "label": "NO: Giannis Antetokounmpo: 6+ (finishes with 5 or fewer)",
+   "ticker": "KXNBAAST-26NOV10MIAUTA-MIAGANTETOKOUNMPO7-6",
    "side": "NO",
-   "price": 0.6,
-   "win_prob": 0.734,
+   "price": 0.47,
+   "win_prob": 0.605,
+   "edge": 0.1176,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Giannis Antetokounmpo: 10+ (finishes with 9 or fewer)",
+   "ticker": "KXNBAREB-26NOV10MIAUTA-MIAGANTETOKOUNMPO7-10",
+   "side": "NO",
+   "price": 0.26,
+   "win_prob": 0.3907,
    "edge": 0.1172,
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Giannis Antetokounmpo: 12+ (finishes with 11 or fewer)",
-   "ticker": "KXNBAREB-26NOV10MIAUTA-MIAGANTETOKOUNMPO7-12",
+   "label": "NO: Brice Sensabaugh: 2+ (finishes with 1 or fewer)",
+   "ticker": "KXNBAAST-26NOV10MIAUTA-UTABSENSABAUGH28-2",
    "side": "NO",
-   "price": 0.42,
-   "win_prob": 0.5522,
-   "edge": 0.1152,
+   "price": 0.49,
+   "win_prob": 0.6246,
+   "edge": 0.1171,
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Jalen Green: 4+ (finishes with 3 or fewer)",
-   "ticker": "KXNBAREB-26NOV10LACPHX-PHXJGREEN4-4",
+   "label": "NO: Isaiah Hartenstein: 2+ (finishes with 1 or fewer)",
+   "ticker": "KXNBAAST-26NOV10OKCPOR-OKCIHARTENSTEIN55-2",
    "side": "NO",
-   "price": 0.46,
-   "win_prob": 0.5921,
-   "edge": 0.1148,
+   "price": 0.15,
+   "win_prob": 0.2755,
+   "edge": 0.1165,
    "sportsbooks": "no line"
   },
   {
-   "label": "YES: Keaton Wagler: 10+",
-   "ticker": "KXNBAPTS-26NOV10LACPHX-LACKWAGLER1-10",
-   "side": "YES",
-   "price": 0.48,
-   "win_prob": 0.6113,
-   "edge": 0.1139,
+   "label": "NO: Darryn Peterson: 6+ (finishes with 5 or fewer)",
+   "ticker": "KXNBAREB-26NOV10MIAUTA-UTADPETERSON22-6",
+   "side": "NO",
+   "price": 0.65,
+   "win_prob": 0.7823,
+   "edge": 0.1164,
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Mikal Bridges: 2+ (finishes with 1 or fewer)",
-   "ticker": "KXNBAAST-26NOV10MILNYK-NYKMBRIDGES25-2",
+   "label": "NO: Franz Wagner: 10+ (finishes with 9 or fewer)",
+   "ticker": "KXNBAAST-26NOV10ORLSAC-ORLFWAGNER22-10",
    "side": "NO",
-   "price": 0.23,
-   "win_prob": 0.3559,
+   "price": 0.67,
+   "win_prob": 0.799,
    "edge": 0.1135,
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Jaime Jaquez Jr.: 4+ (finishes with 3 or fewer)",
-   "ticker": "KXNBAREB-26NOV10MILNYK-MILJJAQUEZ24-4",
-   "side": "NO",
-   "price": 0.3,
-   "win_prob": 0.4277,
-   "edge": 0.113,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Lauri Markkanen: 20+ (finishes with 19 or fewer)",
-   "ticker": "KXNBAPTS-26NOV10MIAUTA-UTALMARKKANEN23-20",
-   "side": "NO",
-   "price": 0.34,
-   "win_prob": 0.468,
-   "edge": 0.1123,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Jayson Tatum: 25+ (finishes with 24 or fewer)",
-   "ticker": "KXNBAPTS-26NOV10BOSPHI-BOSJTATUM0-25",
-   "side": "NO",
-   "price": 0.4,
-   "win_prob": 0.5277,
-   "edge": 0.1109,
+   "label": "YES: Precious Achiuwa: 10+",
+   "ticker": "KXNBAREB-26NOV10ORLSAC-SACPACHIUWA9-10",
+   "side": "YES",
+   "price": 0.13,
+   "win_prob": 0.2503,
+   "edge": 0.1124,
    "sportsbooks": "no line"
   },
   {
@@ -403,15 +643,6 @@
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Collin Gillespie: 10+ (finishes with 9 or fewer)",
-   "ticker": "KXNBAPTS-26NOV10LACPHX-PHXCGILLESPIE12-10",
-   "side": "NO",
-   "price": 0.54,
-   "win_prob": 0.6677,
-   "edge": 0.1103,
-   "sportsbooks": "no line"
-  },
-  {
    "label": "NO: Brayden Burries: 10+ (finishes with 9 or fewer)",
    "ticker": "KXNBAPTS-26NOV10MILNYK-MILBBURRIES0-10",
    "side": "NO",
@@ -421,21 +652,39 @@
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Rui Hachimura: 6+ (finishes with 5 or fewer)",
-   "ticker": "KXNBAREB-26NOV10LACPHX-LACRHACHIMURA28-6",
+   "label": "NO: Giannis Antetokounmpo: 30+ (finishes with 29 or fewer)",
+   "ticker": "KXNBAPTS-26NOV10MIAUTA-MIAGANTETOKOUNMPO7-30",
    "side": "NO",
-   "price": 0.58,
-   "win_prob": 0.7069,
-   "edge": 0.1099,
+   "price": 0.51,
+   "win_prob": 0.6362,
+   "edge": 0.1087,
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Miles Bridges: 15+ (finishes with 14 or fewer)",
-   "ticker": "KXNBAPTS-26NOV10LACPHX-PHXMBRIDGES22-15",
+   "label": "NO: Brook Lopez: 4+ (finishes with 3 or fewer)",
+   "ticker": "KXNBAREB-26NOV10LACPHX-LACBLOPEZ11-4",
    "side": "NO",
-   "price": 0.38,
-   "win_prob": 0.506,
-   "edge": 0.1095,
+   "price": 0.27,
+   "win_prob": 0.392,
+   "edge": 0.1083,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Giannis Antetokounmpo: 8+ (finishes with 7 or fewer)",
+   "ticker": "KXNBAREB-26NOV10MIAUTA-MIAGANTETOKOUNMPO7-8",
+   "side": "NO",
+   "price": 0.12,
+   "win_prob": 0.2355,
+   "edge": 0.1081,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Jared McCain: 10+ (finishes with 9 or fewer)",
+   "ticker": "KXNBAPTS-26NOV10OKCPOR-OKCJMCCAIN3-10",
+   "side": "NO",
+   "price": 0.35,
+   "win_prob": 0.4727,
+   "edge": 0.1068,
    "sportsbooks": "no line"
   },
   {
@@ -448,6 +697,51 @@
    "sportsbooks": "no line"
   },
   {
+   "label": "NO: Mikal Bridges: 4+ (finishes with 3 or fewer)",
+   "ticker": "KXNBAREB-26NOV10MILNYK-NYKMBRIDGES25-4",
+   "side": "NO",
+   "price": 0.56,
+   "win_prob": 0.6822,
+   "edge": 0.105,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Klay Thompson: 2+ (finishes with 1 or fewer)",
+   "ticker": "KXNBAREB-26NOV10MIAUTA-MIAKTHOMPSON11-2",
+   "side": "NO",
+   "price": 0.4,
+   "win_prob": 0.5214,
+   "edge": 0.1046,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "YES: Keaton Wagler: 10+",
+   "ticker": "KXNBAPTS-26NOV10LACPHX-LACKWAGLER1-10",
+   "side": "YES",
+   "price": 0.49,
+   "win_prob": 0.6113,
+   "edge": 0.1038,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "YES: Jaylen Brown: 6+",
+   "ticker": "KXNBAAST-26NOV10BOSPHI-PHIJBROWN7-6",
+   "side": "YES",
+   "price": 0.19,
+   "win_prob": 0.304,
+   "edge": 0.1032,
+   "sportsbooks": "no line"
+  },
+  {
+   "label": "NO: Khaman Maluach: 6+ (finishes with 5 or fewer)",
+   "ticker": "KXNBAREB-26NOV10LACPHX-PHXKMALUACH10-6",
+   "side": "NO",
+   "price": 0.44,
+   "win_prob": 0.5594,
+   "edge": 0.1021,
+   "sportsbooks": "no line"
+  },
+  {
    "label": "YES: Anfernee Simons: 15+",
    "ticker": "KXNBAPTS-26NOV10BOSPHI-PHIASIMONS5-15",
    "side": "YES",
@@ -457,21 +751,12 @@
    "sportsbooks": "no line"
   },
   {
-   "label": "NO: Karl-Anthony Towns: 2+ (finishes with 1 or fewer)",
-   "ticker": "KXNBAAST-26NOV10MILNYK-NYKKTOWNS32-2",
+   "label": "NO: Rui Hachimura: 6+ (finishes with 5 or fewer)",
+   "ticker": "KXNBAREB-26NOV10LACPHX-LACRHACHIMURA28-6",
    "side": "NO",
-   "price": 0.15,
-   "win_prob": 0.2609,
-   "edge": 0.1019,
-   "sportsbooks": "no line"
-  },
-  {
-   "label": "NO: Ajay Mitchell: 4+ (finishes with 3 or fewer)",
-   "ticker": "KXNBAAST-26NOV10OKCPOR-OKCAMITCHELL25-4",
-   "side": "NO",
-   "price": 0.47,
-   "win_prob": 0.5894,
-   "edge": 0.1019,
+   "price": 0.59,
+   "win_prob": 0.7069,
+   "edge": 0.1,
    "sportsbooks": "no line"
   }
  ]
