@@ -1,17 +1,15 @@
   Season 2026: 0 new games to fetch
-  Season 2027: 0 new games to fetch
-Stats: +0 games (latest 2026-11-10T03:00Z).
-Settled 0 earlier predictions.
-845 open prop markets for 2026-11-10.
-Sportsbook check skipped: saving credits (338 credits left for 42 runs this month at ~9 per game).
-Value watchlist: 73 practice pick(s).
-9 pick(s). Report: site/index.html
-  NO: Isaiah Collier: 15+ (finishes with 14 or fewer)  (92%)
-  NO: Isaiah Collier: 8+ (finishes with 7 or fewer)  (87%)
-  NO: Jase Richardson: 4+ (finishes with 3 or fewer)  (83%)
-  NO: Brice Sensabaugh: 15+ (finishes with 14 or fewer)  (79%)
-  NO: Jase Richardson: 10+ (finishes with 9 or fewer)  (79%)
-  NO: Brice Sensabaugh: 4+ (finishes with 3 or fewer)  (79%)
-  NO: Anthony Black: 6+ (finishes with 5 or fewer)  (80%)
-  NO: Isaiah Collier: 10+ (finishes with 9 or fewer)  (71%)
-  NO: Isaiah Collier: 6+ (finishes with 5 or fewer)  (70%)
+  Season 2027: 6 new games to fetch
+Stats: +6 games (latest 2026-11-11T04:00Z).
+Settled 813 earlier predictions.
+1207 open prop markets for 2026-11-11.
+Sportsbook check skipped: saving credits (332 credits left for 40 runs this month at ~9 per game).
+Value watchlist: 60 practice pick(s).
+7 pick(s). Report: site/index.html
+  NO: Sidy Cissoko: 10+ (finishes with 9 or fewer)  (85%)
+  NO: Ivica Zubac: 15+ (finishes with 14 or fewer)  (81%)
+  NO: Herbert Jones: 10+ (finishes with 9 or fewer)  (80%)
+  NO: Shai Gilgeous-Alexander: 35+ (finishes with 34 or fewer)  (84%)
+  NO: Isaiah Hartenstein: 10+ (finishes with 9 or fewer)  (76%)
+  NO: Ajay Mitchell: 20+ (finishes with 19 or fewer)  (76%)
+  NO: Derrick White: 15+ (finishes with 14 or fewer)  (72%)
