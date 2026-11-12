@@ -1,18 +1,16 @@
   Season 2026: 0 new games to fetch
-  Season 2027: 0 new games to fetch
-Stats: +0 games (latest 2026-11-11T04:00Z).
-Settled 0 earlier predictions.
-1250 open prop markets for 2026-11-11.
-Sportsbook check skipped: saving credits (326 credits left for 40 runs this month at ~9 per game).
-Value watchlist: 87 practice pick(s).
-10 pick(s). Report: site/index.html
-  NO: Shai Gilgeous-Alexander: 40+ (finishes with 39 or fewer)  (95%)
-  NO: Kel'el Ware: 15+ (finishes with 14 or fewer)  (90%)
-  NO: Sidy Cissoko: 10+ (finishes with 9 or fewer)  (85%)
-  NO: Baylor Scheierman: 10+ (finishes with 9 or fewer)  (81%)
-  NO: Herbert Jones: 10+ (finishes with 9 or fewer)  (80%)
-  NO: Anthony Black: 6+ (finishes with 5 or fewer)  (81%)
-  NO: Shai Gilgeous-Alexander: 35+ (finishes with 34 or fewer)  (84%)
-  NO: Isaiah Hartenstein: 10+ (finishes with 9 or fewer)  (76%)
-  NO: Derrick White: 15+ (finishes with 14 or fewer)  (72%)
-  NO: Kel'el Ware: 8+ (finishes with 7 or fewer)  (71%)
+  Season 2027: 10 new games to fetch
+Stats: +10 games (latest 2026-11-12T03:00Z).
+Settled 1218 earlier predictions.
+523 open prop markets for 2026-11-12.
+Sportsbook check skipped: saving credits (320 credits left for 38 runs this month at ~9 per game).
+Value watchlist: 47 practice pick(s).
+8 pick(s). Report: site/index.html
+  NO: Coby White: 6+ (finishes with 5 or fewer)  (90%)
+  NO: Grayson Allen: 6+ (finishes with 5 or fewer)  (89%)
+  NO: Naz Reid: 25+ (finishes with 24 or fewer)  (88%)
+  NO: Sion James: 10+ (finishes with 9 or fewer)  (82%)
+  NO: Grayson Allen: 20+ (finishes with 19 or fewer)  (78%)
+  NO: Naz Reid: 20+ (finishes with 19 or fewer)  (74%)
+  NO: Coby White: 15+ (finishes with 14 or fewer)  (74%)
+  NO: Cade Cunningham: 25+ (finishes with 24 or fewer)  (72%)
