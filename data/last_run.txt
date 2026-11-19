@@ -1,17 +1,11 @@
   Season 2026: 0 new games to fetch
-  Season 2027: 0 new games to fetch
-Stats: +0 games (latest 2026-11-12T03:00Z).
-Settled 0 earlier predictions.
-560 open prop markets for 2026-11-12.
-Sportsbook check skipped: saving credits (314 credits left for 38 runs this month at ~9 per game).
-Value watchlist: 56 practice pick(s).
-9 pick(s). Report: site/index.html
-  NO: Grayson Allen: 6+ (finishes with 5 or fewer)  (89%)
-  NO: Naz Reid: 25+ (finishes with 24 or fewer)  (88%)
-  NO: Jamison Battle: 4+ (finishes with 3 or fewer)  (85%)
-  NO: Collin Murray-Boyles: 15+ (finishes with 14 or fewer)  (85%)
-  NO: Sion James: 10+ (finishes with 9 or fewer)  (82%)
-  NO: Grayson Allen: 20+ (finishes with 19 or fewer)  (78%)
-  NO: Naz Reid: 20+ (finishes with 19 or fewer)  (74%)
-  NO: Coby White: 15+ (finishes with 14 or fewer)  (74%)
-  NO: Cade Cunningham: 25+ (finishes with 24 or fewer)  (72%)
+  Season 2027: 12 new games to fetch
+Stats: +12 games (latest 2026-11-19T03:00Z).
+Settled 560 earlier predictions.
+507 open prop markets for 2026-11-19.
+Sportsbook check skipped: saving credits (209 credits left for 24 runs this month at ~9 per game).
+Value watchlist: 50 practice pick(s).
+3 pick(s). Report: site/index.html
+  NO: Charles Bassey: 2+ (finishes with 1 or fewer)  (89%)
+  NO: Stephon Castle: 20+ (finishes with 19 or fewer)  (79%)
+  NO: Charles Bassey: 8+ (finishes with 7 or fewer)  (75%)
