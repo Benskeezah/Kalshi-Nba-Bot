@@ -1,11 +1,8 @@
   Season 2026: 0 new games to fetch
-  Season 2027: 12 new games to fetch
-Stats: +12 games (latest 2026-11-19T03:00Z).
-Settled 560 earlier predictions.
-507 open prop markets for 2026-11-19.
-Sportsbook check skipped: saving credits (209 credits left for 24 runs this month at ~9 per game).
-Value watchlist: 50 practice pick(s).
-3 pick(s). Report: site/index.html
-  NO: Charles Bassey: 2+ (finishes with 1 or fewer)  (89%)
-  NO: Stephon Castle: 20+ (finishes with 19 or fewer)  (79%)
-  NO: Charles Bassey: 8+ (finishes with 7 or fewer)  (75%)
+  Season 2027: 3 new games to fetch
+Stats: +3 games (latest 2026-11-24T01:30Z).
+Settled 461 earlier predictions.
+0 open prop markets for 2026-11-24.
+Sportsbook check skipped: saving credits (131 credits left for 14 runs this month at ~9 per game).
+Value watchlist: 0 practice pick(s).
+0 pick(s). Report: site/index.html
