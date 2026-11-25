@@ -1,5 +1,5 @@
-size: 13,375 bytes
-sections: ['High-probability picks', 'Value watchlist (practice only)', "What's hitting", 'Track record']
-table rows: [3, 0, 6, 4, 4]
+size: 115,480 bytes
+sections: ['High-probability picks', 'Value watchlist (practice only)', 'Caleb Martin: 20+ points — Caleb Martin: 20+', 'P.J. Washington: 25+ points — P.J. Washington: 25+', 'Morez Johnson Jr.: 15+ points — Morez Johnson Jr.: 15+', 'Morez Johnson Jr.: 10+ points — Morez Johnson Jr.: 10+', 'Morez Johnson Jr.: 5+ points — Morez Johnson Jr.: 5+', 'Naji Marshall: 5+ points — Naji Marshall: 5+', 'Nikola Jokić: 35+ points — Nikola Jokić: 35+', 'Nikola Jokić: 30+ points — Nikola Jokić: 30+', 'Nikola Jokić: 25+ points — Nikola Jokić: 25+', 'Nikola Jokić: 20+ points — Nikola Jokić: 20+', 'Jamal Murray: 30+ points — Jamal Murray: 30+', 'Jamal Murray: 25+ points — Jamal Murray: 25+', 'Jamal Murray: 20+ points — Jamal Murray: 20+', 'Jamal Murray: 15+ points — Jamal Murray: 15+', 'DeMar DeRozan: 20+ points — DeMar DeRozan: 20+', 'DeMar DeRozan: 15+ points — DeMar DeRozan: 15+', 'DeMar DeRozan: 10+ points — DeMar DeRozan: 10+', 'Cameron Johnson: 20+ points — Cameron Johnson: 20+', 'Cameron Johnson: 15+ points — Cameron Johnson: 15+', 'Cameron Johnson: 10+ points — Cameron Johnson: 10+', 'Christian Braun: 20+ points — Christian Braun: 20+', 'Christian Braun: 15+ points — Christian Braun: 15+', 'Christian Braun: 10+ points — Christian Braun: 10+', 'Aaron Gordon: 20+ points — Aaron Gordon: 20+', 'Aaron Gordon: 15+ points — Aaron Gordon: 15+', "What's hitting", 'Track record']
+table rows: [3, 153, 6, 4, 4]
 html problems: none
 left open: none
